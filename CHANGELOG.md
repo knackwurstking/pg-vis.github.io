@@ -8,3 +8,7 @@
 
 - Changed svg icons
 - Removed search-bar submit button
+
+## v0.0.3
+
+- Added history handling
