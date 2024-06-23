@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.6 2024-06-23
+
+- Set maximum viewport scale to 1.0
+- Fixed missing backdrop filter on safari browser
+
 ## v0.0.5 2024-06-23
 
 - Allow importing multiple files at once
