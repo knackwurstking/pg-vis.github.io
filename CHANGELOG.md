@@ -2,7 +2,7 @@
 
 ## v0.0.4 [unreleased]
 
-- [ ] Import dialog for downloading a gist file from GitHub
+- Import dialog for downloading a gist file from GitHub
 
 ## v0.0.3
 
