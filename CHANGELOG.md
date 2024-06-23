@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.5 [unreleased]
+
+- Allow importing multiple files at once
+
 ## v0.0.4 2024-07-23
 
 - Import dialog for downloading a gist file from GitHub
