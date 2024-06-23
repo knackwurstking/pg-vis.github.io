@@ -3,6 +3,7 @@
 ## v0.0.7 2024-06-23
 
 - Added storage handling for the search-bar
+- [ui version v0.2.0](https://github.com/knackwurstking/ui)
 
 ## v0.0.5 2024-06-23
 
