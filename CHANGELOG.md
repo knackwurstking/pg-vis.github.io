@@ -1,10 +1,11 @@
 # Changelog
 
-## v0.0.5 [unreleased]
+## v0.0.5 2024-06-23
 
 - Allow importing multiple files at once
+- Use blur drawer backdrop filter
 
-## v0.0.4 2024-07-23
+## v0.0.4 2024-06-23
 
 - Import dialog for downloading a gist file from GitHub
 

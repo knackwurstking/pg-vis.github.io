@@ -789,13 +789,13 @@ var Se=Object.defineProperty;var pe=o=>{throw TypeError(o)};var Le=(o,t,e)=>t in
             -ms-overflow-style: none;
             scrollbar-width: none;
 
+            /*
             background-color: var(--ui-card-bgColor);
             color: var(--ui-card-color);
+            */
             border-right: 1px solid var(--ui-card-borderColor);
-            /*
             background-color: var(--ui-backdrop-bgColor);
             backdrop-filter: var(--ui-backdropFilter);
-            */
 
             transition: left 0.5s ease;
         }
@@ -1151,7 +1151,11 @@ var Se=Object.defineProperty;var pe=o=>{throw TypeError(o)};var Le=(o,t,e)=>t in
         }
     </style>
 
-    <ui-search title="Alarmsuche (RegEx Mode)" no-submit></ui-search>
+    <ui-search
+        style="z-index: 10;"
+        title="Alarmsuche (RegEx Mode)"
+        no-submit
+    ></ui-search>
 `,St=class St extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"}),this.shadowRoot.innerHTML=oi,this.input=this.shadowRoot.querySelector("ui-search"),this.stackLayout=document.querySelector("ui-stack-layout"),this.ui={root:this,input:this.input,isActive(){return this.root.style.display==="block"},setActive(t){if(t){this.root.style.display="block",this.root.stackLayout.style.setProperty("--search-bar-height",we),this.input.focus();return}this.root.style.display="none",this.root.stackLayout.style.setProperty("--search-bar-height","0rem")}}}};n(St,"register",()=>{ie.register(),customElements.define("search-bar",St)});let oe=St;const ni=a`
     <search-bar></search-bar>
 
@@ -1168,7 +1172,7 @@ var Se=Object.defineProperty;var pe=o=>{throw TypeError(o)};var Le=(o,t,e)=>t in
         <ul></ul>
     </div>
 `,Lt=class Lt extends v{constructor(){super(),this.innerHTML=ni,this.ui.setName("alert-lists"),this.uiStore=document.querySelector("ui-store"),this.alertList=null,this.stackLayout=document.querySelector("ui-stack-layout"),this.searchBar=this.querySelector("search-bar"),this.alertPage=new G,this.ui={...this.ui,root:this,get(){return this.root.alertList},set(t){var e;this.root.alertList=t||null,this.root.uiStore.ui.set("appBarTitle",((e=this.root.alertList)==null?void 0:e.title)||""),this.root.uiStore.ui.set("search",{active:!1}),setTimeout(()=>this.root.renderList())}}}connectedCallback(){super.connectedCallback(),this.uiStore.ui.on("search",async({active:e})=>{e===!0?(this.searchBar.ui.setActive(!0),await this.search(this.searchBar.ui.input.ui.getValue())):(this.searchBar.ui.setActive(!1),await this.search(""))});let t=null;this.cleanup.add(this.searchBar.ui.input.ui.events.on("input",async e=>{t!==null&&clearTimeout(t),t=setTimeout(async()=>{await this.search(e)},250)})),this.stackLayout.ui.registerPage("alert",()=>this.alertPage)}disconnectedCallback(){super.disconnectedCallback(),this.stackLayout.ui.unregisterPage("alert")}async renderList(){const t=this.querySelector("ul");for(;t.children.length>0;)t.removeChild(t.firstChild);const e=this.uiStore.ui.get("search"),i=new RegExp(this.searchBar.ui.input.ui.getValue().replaceAll(" ",".*"));for(let r=0;r<this.alertList.data.length;r++){if(e.active===!0&&!this.is(this.alertList.data[r],i))return;setTimeout(()=>this.renderListElement(t,this.alertList.data[r],r<this.alertList.data.length-1))}}renderListElement(t,e,i){t.appendChild(ye({alert:e,container:"li",hasBorder:i,onClick:this.onClick.bind(this)}))}getAlertFromElement(t){return{from:parseInt(t.getAttribute("data-from"),10),to:parseInt(t.getAttribute("data-to"),10),alert:t.getAttribute("data-alert"),desc:t.getAttribute("data-desc").split(`
-`),note:t.getAttribute("data-note")}}is(t,e){const i=[];for(let r=t.from;r<=t.to;r++)i.push(r);return!!`${i.join(",")} ${t.alert}`.match(e)}async onClick(t){const e=t.currentTarget,i=this.getAlertFromElement(e);this.alertPage.ui.set(i),this.stackLayout.ui.setPage(this.alertPage.ui.getName(),null,!0)}async search(t){const e=new RegExp(t.replaceAll(" ",".*"));[...this.querySelector("ul").children].forEach(i=>{if(!this.searchBar.ui.isActive()){i.style.display="flex";return}if(this.is(this.getAlertFromElement(i),e)){i.style.display="flex";return}i.style.display="none"})}};n(Lt,"register",()=>{Y.register(),Q.register(),v.register(),oe.register(),G.register(),customElements.define("alert-lists-page",Lt)});let I=Lt;const ai=a``,Et=class Et extends v{constructor(){super(),this.innerHTML=ai,this.ui.setName("metal-sheet-lists")}};n(Et,"register",()=>{v.register(),customElements.define("metal-sheet-lists-page",Et)});let U=Et;const li=a``,At=class At extends v{constructor(){super(),this.innerHTML=li,this.ui.setName("vis")}};n(At,"register",()=>{v.register(),customElements.define("vis-page",At)});let _=At;const ci=a``,Tt=class Tt extends v{constructor(){super(),this.innerHTML=ci,this.ui.setName("vis-data")}};n(Tt,"register",()=>{v.register(),customElements.define("vis-data-page",Tt)});let tt=Tt;const ui="v0.0.5.dev",hi=a`
+`),note:t.getAttribute("data-note")}}is(t,e){const i=[];for(let r=t.from;r<=t.to;r++)i.push(r);return!!`${i.join(",")} ${t.alert}`.match(e)}async onClick(t){const e=t.currentTarget,i=this.getAlertFromElement(e);this.alertPage.ui.set(i),this.stackLayout.ui.setPage(this.alertPage.ui.getName(),null,!0)}async search(t){const e=new RegExp(t.replaceAll(" ",".*"));[...this.querySelector("ul").children].forEach(i=>{if(!this.searchBar.ui.isActive()){i.style.display="flex";return}if(this.is(this.getAlertFromElement(i),e)){i.style.display="flex";return}i.style.display="none"})}};n(Lt,"register",()=>{Y.register(),Q.register(),v.register(),oe.register(),G.register(),customElements.define("alert-lists-page",Lt)});let I=Lt;const ai=a``,Et=class Et extends v{constructor(){super(),this.innerHTML=ai,this.ui.setName("metal-sheet-lists")}};n(Et,"register",()=>{v.register(),customElements.define("metal-sheet-lists-page",Et)});let U=Et;const li=a``,At=class At extends v{constructor(){super(),this.innerHTML=li,this.ui.setName("vis")}};n(At,"register",()=>{v.register(),customElements.define("vis-page",At)});let _=At;const ci=a``,Tt=class Tt extends v{constructor(){super(),this.innerHTML=ci,this.ui.setName("vis-data")}};n(Tt,"register",()=>{v.register(),customElements.define("vis-data-page",Tt)});let tt=Tt;const ui="v0.0.5",hi=a`
     <ui-flex-grid-item>
         <ui-label
             secondary="Zum Importieren einer Datei leer lassen"
