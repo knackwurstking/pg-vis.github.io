@@ -2,7 +2,7 @@
 
 ## v0.0.8 2024-06-26
 
-- Enable Drawer "Blech Listen" section
+- Enable drawer section: "Blech Listen"
 - Added "Blech Listen" page(s) (READONLY for now, work-in-progress)
 - [ui version v0.2.1](https://github.com/knackwurstking/ui)
 
