@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.12 [unreleased]
+
+- Fixed app-bar items for the "metal-sheet-lists" page
+- Added revisions number for each drawer group
+- Added drawer gist item for "alert-lists"
+
+### Tweaks
+
+- Reimport all (gists) data
+
 ## v0.0.11 2024-06-27
 
 - Fixed deletion for drawer group items
