@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.10 2024-06-27
+
+- PATCH gist database repo, needs a token with write access for gist repos
+- Update drawer section: "Blech Listen", new item added (pull/push gist data)
+
 ## v0.0.9 2024-06-27
 
 - Fixed padding for "Blech Listen" page
