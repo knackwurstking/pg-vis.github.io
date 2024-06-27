@@ -1,9 +1,14 @@
 # Changelog
 
+## v0.0.9 2024-06-27
+
+- Fixed padding for "Blech Listen" page
+
 ## v0.0.8 2024-06-26
 
 - Enable drawer section: "Blech Listen"
 - Added "Blech Listen" page(s) (READONLY for now, work-in-progress)
+- Set html language to "de"
 - [ui version v0.2.1](https://github.com/knackwurstking/ui)
 
 ## v0.0.7 2024-06-23

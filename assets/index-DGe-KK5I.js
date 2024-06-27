@@ -1191,7 +1191,7 @@ var Ee=Object.defineProperty;var ge=o=>{throw TypeError(o)};var Te=(o,t,e)=>t in
         style="
             width: 100%;
             height: 100%;
-            padding: var(--ui-app-bar-height);
+            padding-top: var(--ui-app-bar-height);
             overflow: auto;
         "
     >
@@ -1202,7 +1202,7 @@ var Ee=Object.defineProperty;var ge=o=>{throw TypeError(o)};var Te=(o,t,e)=>t in
             <tbody></tbody>
         </table>
     </div>
-`,Et=class Et extends v{constructor(){super(),this.innerHTML=ci,this.ui.setName("metal-sheet-lists"),this.uiStore=document.querySelector("ui-store"),this.list=null,this.ui={...this.ui,root:this,get(){return this.root.list},set(t){let e=t.format;t.toolID&&(e=`${t.format} - ${t.toolID}`),this.root.list=t||null,this.root.uiStore.ui.set("appBarTitle",e),this.root.render()}}}render(){const t=this.querySelector("thead > tr"),e=this.querySelector("tbody");for(;t.firstChild;)t.removeChild(t.firstChild);for(;e.firstChild;)e.removeChild(e.firstChild);if(this.list!==null){for(const i of this.list.data.table.header){const r=document.createElement("th");r.style.textAlign="center",r.innerText=i,t.appendChild(r)}for(const i of this.list.data.table.data){const r=document.createElement("tr");for(const s of i){const l=document.createElement("td");l.style.textAlign="center",l.innerText=s,r.appendChild(l)}e.appendChild(r)}}}};n(Et,"register",()=>{v.register(),customElements.define("metal-sheet-lists-page",Et)});let tt=Et;const ui=a``,Tt=class Tt extends v{constructor(){super(),this.innerHTML=ui,this.ui.setName("vis")}};n(Tt,"register",()=>{v.register(),customElements.define("vis-page",Tt)});let et=Tt;const hi=a``,At=class At extends v{constructor(){super(),this.innerHTML=hi,this.ui.setName("vis-data")}};n(At,"register",()=>{v.register(),customElements.define("vis-data-page",At)});let it=At;const di="v0.0.8",pi=a`
+`,Et=class Et extends v{constructor(){super(),this.innerHTML=ci,this.ui.setName("metal-sheet-lists"),this.uiStore=document.querySelector("ui-store"),this.list=null,this.ui={...this.ui,root:this,get(){return this.root.list},set(t){let e=t.format;t.toolID&&(e=`${t.format} - ${t.toolID}`),this.root.list=t||null,this.root.uiStore.ui.set("appBarTitle",e),this.root.render()}}}render(){const t=this.querySelector("thead > tr"),e=this.querySelector("tbody");for(;t.firstChild;)t.removeChild(t.firstChild);for(;e.firstChild;)e.removeChild(e.firstChild);if(this.list!==null){for(const i of this.list.data.table.header){const r=document.createElement("th");r.style.textAlign="center",r.innerText=i,t.appendChild(r)}for(const i of this.list.data.table.data){const r=document.createElement("tr");for(const s of i){const l=document.createElement("td");l.style.textAlign="center",l.innerText=s,r.appendChild(l)}e.appendChild(r)}}}};n(Et,"register",()=>{v.register(),customElements.define("metal-sheet-lists-page",Et)});let tt=Et;const ui=a``,Tt=class Tt extends v{constructor(){super(),this.innerHTML=ui,this.ui.setName("vis")}};n(Tt,"register",()=>{v.register(),customElements.define("vis-page",Tt)});let et=Tt;const hi=a``,At=class At extends v{constructor(){super(),this.innerHTML=hi,this.ui.setName("vis-data")}};n(At,"register",()=>{v.register(),customElements.define("vis-data-page",At)});let it=At;const di="v0.0.9",pi=a`
     <ui-flex-grid-item>
         <ui-label
             secondary="Zum Importieren einer Datei leer lassen"
