@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.11 2024-06-27
+
+- Fixed deletion for drawer group items
+- Fixed the not implemented error
+
 ## v0.0.10 2024-06-27
 
 - PATCH gist database repo, needs a token with write access for gist repos

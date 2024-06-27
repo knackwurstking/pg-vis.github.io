@@ -1202,7 +1202,7 @@ var Ee=Object.defineProperty;var ge=o=>{throw TypeError(o)};var Te=(o,t,e)=>t in
             <tbody></tbody>
         </table>
     </div>
-`,Et=class Et extends y{constructor(){super(),this.innerHTML=ci,this.ui.setName("metal-sheet-lists"),this.uiStore=document.querySelector("ui-store"),this.list=null,this.ui={...this.ui,root:this,get(){return this.root.list},set(t){let e=t.format;t.toolID&&(e=`${t.format} - ${t.toolID}`),this.root.list=t||null,this.root.uiStore.ui.set("appBarTitle",e),this.root.render()}}}render(){const t=this.querySelector("thead > tr"),e=this.querySelector("tbody");for(;t.firstChild;)t.removeChild(t.firstChild);for(;e.firstChild;)e.removeChild(e.firstChild);if(this.list!==null){for(const i of this.list.data.table.header){const r=document.createElement("th");r.style.textAlign="center",r.innerText=i,t.appendChild(r)}for(const i of this.list.data.table.data){const r=document.createElement("tr");for(const s of i){const l=document.createElement("td");l.style.textAlign="center",l.innerText=s,r.appendChild(l)}e.appendChild(r)}}}};n(Et,"register",()=>{y.register(),customElements.define("metal-sheet-lists-page",Et)});let tt=Et;const ui=a``,Tt=class Tt extends y{constructor(){super(),this.innerHTML=ui,this.ui.setName("vis")}};n(Tt,"register",()=>{y.register(),customElements.define("vis-page",Tt)});let et=Tt;const hi=a``,At=class At extends y{constructor(){super(),this.innerHTML=hi,this.ui.setName("vis-data")}};n(At,"register",()=>{y.register(),customElements.define("vis-data-page",At)});let it=At;const di="v0.0.10",pi=a`
+`,Et=class Et extends y{constructor(){super(),this.innerHTML=ci,this.ui.setName("metal-sheet-lists"),this.uiStore=document.querySelector("ui-store"),this.list=null,this.ui={...this.ui,root:this,get(){return this.root.list},set(t){let e=t.format;t.toolID&&(e=`${t.format} - ${t.toolID}`),this.root.list=t||null,this.root.uiStore.ui.set("appBarTitle",e),this.root.render()}}}render(){const t=this.querySelector("thead > tr"),e=this.querySelector("tbody");for(;t.firstChild;)t.removeChild(t.firstChild);for(;e.firstChild;)e.removeChild(e.firstChild);if(this.list!==null){for(const i of this.list.data.table.header){const r=document.createElement("th");r.style.textAlign="center",r.innerText=i,t.appendChild(r)}for(const i of this.list.data.table.data){const r=document.createElement("tr");for(const s of i){const l=document.createElement("td");l.style.textAlign="center",l.innerText=s,r.appendChild(l)}e.appendChild(r)}}}};n(Et,"register",()=>{y.register(),customElements.define("metal-sheet-lists-page",Et)});let tt=Et;const ui=a``,Tt=class Tt extends y{constructor(){super(),this.innerHTML=ui,this.ui.setName("vis")}};n(Tt,"register",()=>{y.register(),customElements.define("vis-page",Tt)});let et=Tt;const hi=a``,At=class At extends y{constructor(){super(),this.innerHTML=hi,this.ui.setName("vis-data")}};n(At,"register",()=>{y.register(),customElements.define("vis-data-page",At)});let it=At;const di="v0.0.11",pi=a`
     <ui-flex-grid-item>
         <ui-label
             secondary="Zum Importieren einer Datei leer lassen"
@@ -1234,14 +1234,12 @@ var Ee=Object.defineProperty;var ge=o=>{throw TypeError(o)};var Te=(o,t,e)=>t in
         </ui-flex-grid-item>
     </ui-flex-grid-row>
 `,$t=class $t extends m{constructor(){super(),this.innerHTML=fi,this.ui={...this.ui,events:new w},this.data=null}connectedCallback(){super.connectedCallback();const t=this.querySelector("ui-button"),e=this.querySelector("ui-icon-button");this.cleanup.add(t.ui.events.on("click",()=>{this.ui.events.dispatch("click",this.data)})),this.cleanup.add(e.ui.events.on("click",()=>{this.ui.events.dispatch("delete",this.data)}))}set(t){this.data=t,this.setText(t.title)}setText(t){const e=document.createElement("span");e.innerHTML=a` <ui-primary>${t}</ui-primary> `,this.querySelector("ui-button").appendChild(e)}};n($t,"register",()=>{R.register(),m.register(),S.register(),f.register(),b.register(),L.register(),E.register(),v.register(),customElements.define("pg-drawer-item-alert-list",$t)});let rt=$t;const bi=a`
-    <ui-drawer-group title="Alarm Listen">
-        <ui-drawer-group-item>
-            <ui-button name="import" variant="full" color="primary">
-                Import
-            </ui-button>
-        </ui-drawer-group-item>
-    </ui-drawer-group>
-`,Rt=class Rt extends C{constructor(){super(),this.innerHTML=bi,this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout")}connectedCallback(){super.connectedCallback(),this.cleanup.add(this.uiStore.ui.on("alertLists",this.onAlertLists.bind(this),!0)),this.querySelector('ui-button[name="import"]').ui.events.on("click",this.onClickImport.bind(this))}async onAlertLists(t){if(!t)return;const e=[...this.children].slice(1);for(;e.length>0;)this.removeChild(e.pop());for(const i of gi(t)){const r=new rt;r.set(i),r.cleanup.add(r.ui.events.on("click",()=>{this.stackLayout.ui.clearStack(),this.stackLayout.ui.setPage("alert-lists",l=>{l.ui.set(i)}),document.querySelector("pg-drawer").ui.setOpen(!1)})),r.cleanup.add(r.ui.events.on("delete",()=>{this.uiStore.ui.update("alertLists",s=>s.filter(l=>l.title!==i.title))})),this.appendChild(r)}}validate(t,e=null){const i=r=>new Error(`invalid data for alert:
+    <ui-drawer-group-item>
+        <ui-button name="import" variant="full" color="primary">
+            Import
+        </ui-button>
+    </ui-drawer-group-item>
+`,Rt=class Rt extends C{constructor(){super(),this.innerHTML=bi,this.ui.setTitle("Alarm Listen"),this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout")}connectedCallback(){super.connectedCallback(),this.cleanup.add(this.uiStore.ui.on("alertLists",this.onAlertLists.bind(this),!0)),this.querySelector('ui-button[name="import"]').ui.events.on("click",this.onClickImport.bind(this))}async onAlertLists(t){if(!t)return;const e=[...this.children].slice(1);for(;e.length>0;)this.removeChild(e.pop());for(const i of gi(t)){const r=new rt;r.set(i),r.cleanup.add(r.ui.events.on("click",()=>{this.stackLayout.ui.clearStack(),this.stackLayout.ui.setPage("alert-lists",l=>{l.ui.set(i)}),document.querySelector("pg-drawer").ui.setOpen(!1)})),r.cleanup.add(r.ui.events.on("delete",()=>{this.uiStore.ui.update("alertLists",s=>s.filter(l=>l.title!==i.title))})),this.appendChild(r)}}validate(t,e=null){const i=r=>new Error(`invalid data for alert:
 ${JSON.stringify(r,null,4)}`);if(typeof(t==null?void 0:t.date)!="string")throw new Error('invalid data: missing "date" from type "string"');if(typeof(t==null?void 0:t.title)!="string")throw new Error('invalid data: missing "title" from type "string"');typeof(t==null?void 0:t.gistID)!="string"&&(t.gistID=e),Object.hasOwn(t,"data")||(t.data=[]);for(let r=0;r<t.data.length;r++){const s=t.data[r];if(typeof s.from!="number"||typeof s.to!="number"||typeof s.alert!="string"||!Array.isArray(s.desc)||(typeof s.desc=="string"&&(s.desc=s.desc.split(`
 `)),s.desc.filter(l=>typeof l!="string").length)||typeof s.note!="string"&&s.note)throw i(s)}return t}async update(t){const e=t.title;if(this.uiStore.ui.get("alertLists").find(i=>i.title===e)){if(!window.confirm(`Replace data: ${t.title}?`))return;this.uiStore.ui.update("alertLists",i=>i.map(r=>r.title===e?t:r));return}this.uiStore.ui.update("alertLists",i=>[...i,t])}async onClickImport(){const t=new q("Alarm Listen");t.ui.events.on("submit",async e=>{if(e===null){Dt(async s=>{let l=JSON.parse(s);try{l=this.validate(l,null)}catch(d){alert(`Validation failed: ${d}`);return}await this.update(l)});return}const i=new xe(e);let r;try{r=await i.get()}catch(s){alert(`Something went wrong: ${s}`);return}try{for(const s in r.files)r.files[s].content=this.validate(r.files[s].content,i.id)}catch(s){alert(`Validation failed: ${s}`);return}for(const s of Object.values(r.files))await this.update(s.content)}),t.ui.events.on("close",()=>{document.body.removeChild(t)}),document.body.appendChild(t),t.ui.open(!0)}};n(Rt,"register",()=>{C.register(),m.register(),b.register(),rt.register(),q.register(),customElements.define("pg-drawer-alert-lists",Rt)});let ae=Rt;const vi=a`
     <ui-flex-grid-row>
@@ -1266,49 +1264,45 @@ ${JSON.stringify(r,null,4)}`);if(typeof(t==null?void 0:t.date)!="string")throw n
                 <span>${i>-1?"[P"+i+"]":""}</span>
             </ui-secondary>
         `,this.querySelector("ui-button").appendChild(r)}};n(Ht,"register",()=>{R.register(),m.register(),S.register(),f.register(),b.register(),L.register(),E.register(),v.register(),customElements.define("pg-drawer-item-metal-sheet-list",Ht)});let st=Ht;const yi=a`
-    <ui-drawer-group title="Blech Listen">
-        <ui-drawer-group-item>
-            <ui-button name="import" variant="full" color="primary">
-                Import
-            </ui-button>
-        </ui-drawer-group-item>
+    <ui-drawer-group-item>
+        <ui-button name="import" variant="full" color="primary">
+            Import
+        </ui-button>
+    </ui-drawer-group-item>
 
-        <ui-drawer-group-item style="display: none;">
-            <ui-flex-grid gap="0.25rem">
-                <ui-flex-grid-item gap="0.25rem">
-                    <ui-primary>GistID</ui-primary><br />
-                    <ui-secondary
-                        style="overflow-wrap: anywhere;"
-                    ></ui-secondary>
+    <ui-drawer-group-item style="display: none;">
+        <ui-flex-grid gap="0.25rem">
+            <ui-flex-grid-item gap="0.25rem">
+                <ui-primary>GistID</ui-primary><br />
+                <ui-secondary style="overflow-wrap: anywhere;"></ui-secondary>
+            </ui-flex-grid-item>
+
+            <ui-flex-grid-row gap="0.25rem">
+                <ui-flex-grid-item>
+                    <ui-button
+                        name="import"
+                        variant="full"
+                        color="secondary"
+                        disabled
+                    >
+                        Pull
+                    </ui-button>
                 </ui-flex-grid-item>
 
-                <ui-flex-grid-row gap="0.25rem">
-                    <ui-flex-grid-item>
-                        <ui-button
-                            name="import"
-                            variant="full"
-                            color="secondary"
-                            disabled
-                        >
-                            Pull
-                        </ui-button>
-                    </ui-flex-grid-item>
-
-                    <ui-flex-grid-item>
-                        <ui-button
-                            name="import"
-                            variant="full"
-                            color="secondary"
-                            disabled
-                        >
-                            Push
-                        </ui-button>
-                    </ui-flex-grid-item>
-                </ui-flex-grid-row>
-            </ui-flex-grid>
-        </ui-drawer-group-item>
-    </ui-drawer-group>
-`,qt=class qt extends C{constructor(){super(),this.innerHTML=yi,this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout")}connectedCallback(){super.connectedCallback(),this.cleanup.add(this.uiStore.ui.on("gistIDs",e=>{e&&(e["metal-sheet-lists"]?this.enableUpdateButton(e["metal-sheet-lists"]):this.disableUpdateButton())},!0)),this.cleanup.add(this.uiStore.ui.on("metalSheetLists",this.onMetalSheetLists.bind(this),!0)),this.querySelector('ui-button[name="import"]').ui.events.on("click",this.onClickImport.bind(this))}async enableUpdateButton(t){const e=this.querySelector("ui-drawer-group-item:nth-child(2)");e.style.display="block";const i=e.querySelector("ui-secondary");i.innerText=t;const r=e.querySelector("ui-button:nth-child(1)");r.onclick=()=>{};const s=e.querySelector("ui-button:nth-child(1)");s.onclick=()=>{}}async disableUpdateButton(){const t=this.querySelector("ui-drawer-group-item:nth-child(2)");t.style.display="none"}onMetalSheetLists(t){if(!t)return;const e=[...this.children].slice(2);for(;e.length>0;)this.removeChild(e.pop());for(const i of mi(t)){const r=new st;r.set(i),r.cleanup.add(r.ui.events.on("click",()=>{this.stackLayout.ui.clearStack(),this.stackLayout.ui.setPage("metal-sheet-lists",l=>{l.ui.set(i)}),document.querySelector("pg-drawer").ui.setOpen(!1)})),r.cleanup.add(r.ui.events.on("delete",()=>{this.uiStore.ui.update("metalSheetLists",s=>s.filter(l=>$(l)!==$(i)))})),this.appendChild(r)}}onClickImport(){const t=new q("Blech Listen");t.ui.events.on("submit",async e=>{if(e===null){Dt(async s=>{let l=JSON.parse(s);try{l=this.validate(l,null)}catch(d){alert(`Validation failed: ${d}`);return}await this.update(l)});return}const i=new xe(e);let r;try{r=await i.get(),this.enableUpdateButton(e),this.uiStore.ui.update("gistIDs",s=>({...s,"metal-sheet-lists":e}))}catch(s){alert(`Something went wrong: ${s}`);return}try{for(const s in r.files)r.files[s].content=this.validate(r.files[s].content,i.id)}catch(s){alert(`Validation failed: ${s}`);return}for(const s of Object.values(r.files))await this.update(s.content)}),t.ui.events.on("close",()=>{document.body.removeChild(t)}),document.body.appendChild(t),t.ui.open(!0)}async update(t){const e=$(t);if(this.uiStore.ui.get("metalSheetLists").find(i=>$(i)===e)){if(!window.confirm(`Replace data: "${t.format} - ${t.toolID}"?`))return;this.uiStore.ui.update("metalSheetLists",i=>i.map(r=>$(r)===e?t:r));return}this.uiStore.ui.update("metalSheetLists",i=>[...i,t])}validate(t,e=null){if(typeof(t==null?void 0:t.date)!="string")throw new Error('invalid data: missing "date" from type "string"');if(typeof(t==null?void 0:t.format)!="string")throw new Error('invalid data: missing "format" from type "string"');return typeof(t==null?void 0:t.toolID)!="string"&&(t.toolID=""),typeof(t==null?void 0:t.gistID)!="string"&&(t.gistID=e),Object.hasOwn(t,"data")||(t.data={}),typeof t.data.press!="number"&&(t.data.press=-1),typeof t.data.note!="string"&&(t.data.note=""),Object.hasOwn(t.data,"table")?(Object.hasOwn(t.data.table,"header")||(t.data.table.header=[]),Object.hasOwn(t.data.table,"data")||(t.data.table.data=[])):t.data.table={header:[],data:[]},t}};n(qt,"register",()=>{C.register(),m.register(),b.register(),M.register(),S.register(),f.register(),E.register(),v.register(),st.register(),q.register(),customElements.define("pg-drawer-metal-sheet-lists",qt)});let le=qt;const wi=a`
+                <ui-flex-grid-item>
+                    <ui-button
+                        name="import"
+                        variant="full"
+                        color="secondary"
+                        disabled
+                    >
+                        Push
+                    </ui-button>
+                </ui-flex-grid-item>
+            </ui-flex-grid-row>
+        </ui-flex-grid>
+    </ui-drawer-group-item>
+`,qt=class qt extends C{constructor(){super(),this.innerHTML=yi,this.ui.setTitle("Blech Listen"),this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout")}connectedCallback(){super.connectedCallback(),this.cleanup.add(this.uiStore.ui.on("gistIDs",e=>{e&&(e["metal-sheet-lists"]?this.enableUpdateButton(e["metal-sheet-lists"]):this.disableUpdateButton())},!0)),this.cleanup.add(this.uiStore.ui.on("metalSheetLists",this.onMetalSheetLists.bind(this),!0)),this.querySelector('ui-button[name="import"]').ui.events.on("click",this.onClickImport.bind(this))}async enableUpdateButton(t){const e=this.querySelector("ui-drawer-group-item:nth-child(2)");e.style.display="block";const i=e.querySelector("ui-secondary");i.innerText=t;const r=e.querySelector("ui-button:nth-child(1)");r.onclick=()=>{};const s=e.querySelector("ui-button:nth-child(1)");s.onclick=()=>{}}async disableUpdateButton(){const t=this.querySelector("ui-drawer-group-item:nth-child(2)");t.style.display="none"}onMetalSheetLists(t){if(!t)return;const e=[...this.children].slice(2);for(;e.length>0;)this.removeChild(e.pop());for(const i of mi(t)){const r=new st;r.set(i),r.cleanup.add(r.ui.events.on("click",()=>{this.stackLayout.ui.clearStack(),this.stackLayout.ui.setPage("metal-sheet-lists",l=>{l.ui.set(i)}),document.querySelector("pg-drawer").ui.setOpen(!1)})),r.cleanup.add(r.ui.events.on("delete",()=>{this.uiStore.ui.update("metalSheetLists",s=>s.filter(l=>$(l)!==$(i)))})),this.appendChild(r)}}onClickImport(){const t=new q("Blech Listen");t.ui.events.on("submit",async e=>{if(e===null){Dt(async s=>{let l=JSON.parse(s);try{l=this.validate(l,null)}catch(d){alert(`Validation failed: ${d}`);return}await this.update(l)});return}const i=new xe(e);let r;try{r=await i.get(),this.enableUpdateButton(e),this.uiStore.ui.update("gistIDs",s=>({...s,"metal-sheet-lists":e}))}catch(s){alert(`Something went wrong: ${s}`);return}try{for(const s in r.files)r.files[s].content=this.validate(r.files[s].content,i.id)}catch(s){alert(`Validation failed: ${s}`);return}for(const s of Object.values(r.files))await this.update(s.content)}),t.ui.events.on("close",()=>{document.body.removeChild(t)}),document.body.appendChild(t),t.ui.open(!0)}async update(t){const e=$(t);if(this.uiStore.ui.get("metalSheetLists").find(i=>$(i)===e)){if(!window.confirm(`Replace data: "${t.format} - ${t.toolID}"?`))return;this.uiStore.ui.update("metalSheetLists",i=>i.map(r=>$(r)===e?t:r));return}this.uiStore.ui.update("metalSheetLists",i=>[...i,t])}validate(t,e=null){if(typeof(t==null?void 0:t.date)!="string")throw new Error('invalid data: missing "date" from type "string"');if(typeof(t==null?void 0:t.format)!="string")throw new Error('invalid data: missing "format" from type "string"');return typeof(t==null?void 0:t.toolID)!="string"&&(t.toolID=""),typeof(t==null?void 0:t.gistID)!="string"&&(t.gistID=e),Object.hasOwn(t,"data")||(t.data={}),typeof t.data.press!="number"&&(t.data.press=-1),typeof t.data.note!="string"&&(t.data.note=""),Object.hasOwn(t.data,"table")?(Object.hasOwn(t.data.table,"header")||(t.data.table.header=[]),Object.hasOwn(t.data.table,"data")||(t.data.table.data=[])):t.data.table={header:[],data:[]},t}};n(qt,"register",()=>{C.register(),m.register(),b.register(),M.register(),S.register(),f.register(),E.register(),v.register(),st.register(),q.register(),customElements.define("pg-drawer-metal-sheet-lists",qt)});let le=qt;const wi=a`
     <ui-flex-grid-row>
         <ui-flex-grid-item>
             <ui-button
@@ -1326,14 +1320,12 @@ ${JSON.stringify(r,null,4)}`);if(typeof(t==null?void 0:t.date)!="string")throw n
         </ui-flex-grid-item>
     </ui-flex-grid-row>
 `,Bt=class Bt extends m{constructor(){super(),this.innerHTML=wi,this.ui={...this.ui,events:new w},this.data=null}connectedCallback(){super.connectedCallback();const t=this.querySelector("ui-button"),e=this.querySelector("ui-icon-button");this.cleanup.add(t.ui.events.on("click",()=>{this.ui.events.dispatch("click",this.data)})),this.cleanup.add(e.ui.events.on("click",()=>{this.ui.events.dispatch("delete",this.data)}))}set(t){this.data=t,this.setText(t.title,null)}setText(t,e=null){const i=document.createElement("span");i.innerHTML=a` <ui-primary>${t}</ui-primary> `,e!==null&&(i.innerHTML+=a`<ui-secondary>${e}</ui-secondary>`),this.querySelector("ui-button").appendChild(i)}};n(Bt,"regsiter",()=>{R.register(),m.register(),S.register(),f.register(),b.register(),L.register(),E.register(),v.register(),customElements.define("pg-drawer-item-vis",Bt)});let ot=Bt;const ki=a`
-    <ui-drawer-group title="Vis">
-        <ui-drawer-group-item>
-            <ui-button name="import" variant="full" color="primary" disabled>
-                Import
-            </ui-button>
-        </ui-drawer-group-item>
-    </ui-drawer-group>
-`,jt=class jt extends C{constructor(){super(),this.innerHTML=ki,this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout")}connectedCallback(){super.connectedCallback(),this.cleanup.add(this.uiStore.ui.on("vis",this.onVis.bind(this),!0)),this.querySelector('ui-button[name="import"]').ui.events.on("click",this.onClickImport.bind(this))}onVis(t){if(!t)return;const e=[...this.children].slice(1);for(;e.length>0;)this.removeChild(e.pop());for(const i of t){const r=new ot;r.set(i),r.cleanup.add(r.ui.events.on("click",()=>{this.stackLayout.ui.clearStack(),this.stackLayout.ui.setPage("vis"),document.querySelector("pg-drawer").ui.setOpen(!1)})),r.cleanup.add(r.ui.events.on("delete",()=>{this.uiStore.ui.update("vis",s=>s.filter(l=>l.title!==i.title))}))}}onClickImport(){Dt((e,i)=>{const r=p=>{const[g,c]=p.split(/[xX]/),u=parseFloat(g),k=parseFloat(c);return!u||!k?`${u}x${k}`:`${u>k?u:k}x${u<k?u:k}`},s=p=>{let g="",c="";for(let u=0;u<p.length;u++)if(p[u].match(/^[0-9]+["]?[xX][0-9]+["]?$/)){c=r(p[u]),p=p.slice(u+1);break}else g+=p[u]+" ";return{productName:g.trim(),format:r(c),newRest:p.map(u=>u.trim()).filter(u=>!!u)}},l=(p,g)=>{if(!g)return;const c={title:p,data:[]},u=g.split(`
+    <ui-drawer-group-item>
+        <ui-button name="import" variant="full" color="primary" disabled>
+            Import
+        </ui-button>
+    </ui-drawer-group-item>
+`,jt=class jt extends C{constructor(){super(),this.innerHTML=ki,this.ui.setTitle("Vis"),this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout")}connectedCallback(){super.connectedCallback(),this.cleanup.add(this.uiStore.ui.on("vis",this.onVis.bind(this),!0)),this.querySelector('ui-button[name="import"]').ui.events.on("click",this.onClickImport.bind(this))}onVis(t){if(!t)return;const e=[...this.children].slice(1);for(;e.length>0;)this.removeChild(e.pop());for(const i of t){const r=new ot;r.set(i),r.cleanup.add(r.ui.events.on("click",()=>{this.stackLayout.ui.clearStack(),this.stackLayout.ui.setPage("vis"),document.querySelector("pg-drawer").ui.setOpen(!1)})),r.cleanup.add(r.ui.events.on("delete",()=>{this.uiStore.ui.update("vis",s=>s.filter(l=>l.title!==i.title))}))}}onClickImport(){Dt((e,i)=>{const r=p=>{const[g,c]=p.split(/[xX]/),u=parseFloat(g),k=parseFloat(c);return!u||!k?`${u}x${k}`:`${u>k?u:k}x${u<k?u:k}`},s=p=>{let g="",c="";for(let u=0;u<p.length;u++)if(p[u].match(/^[0-9]+["]?[xX][0-9]+["]?$/)){c=r(p[u]),p=p.slice(u+1);break}else g+=p[u]+" ";return{productName:g.trim(),format:r(c),newRest:p.map(u=>u.trim()).filter(u=>!!u)}},l=(p,g)=>{if(!g)return;const c={title:p,data:[]},u=g.split(`
 `);for(let k=0;k<u.length;k++){if(!u[k])continue;let[B,...Ce]=u[k].trim().replace(/\t/g," ").split(" ");B=B.trim();const{productName:Jt,format:pe,newRest:Kt}=s(Ce);if(!pe)throw`missing format for "${Jt}" (lotto: "${B}") in vis (txt) data!`;if(!(Kt[0]||"").match(/^[0-9]+[,]?[0-9]*$/))throw`thickness not found for "${Jt}" with lotto "${B}"!`;const Se=Kt.shift()||"",Le=Kt.join(" ");c.data.push({lotto:B,name:Jt,format:pe,thickness:parseFloat(Se.replaceAll(",",".")),stamp:Le})}return c},d=i.name.replace(/\.vis\.txt$/i,"").replace(/\.txt$/i,"").replace(/^vis[_-]/i,""),T=l(d,e);this.uiStore.ui.update("vis",p=>(p.unshift(T),p))})}};n(jt,"register",()=>{C.register(),m.register(),b.register(),ot.register(),customElements.define("pg-drawer-vis",jt)});let ce=jt;const xi=a`
     <ui-flex-grid-row>
         <ui-flex-grid-item>
@@ -1360,20 +1352,18 @@ ${JSON.stringify(r,null,4)}`);if(typeof(t==null?void 0:t.date)!="string")throw n
         `,t.querySelector("ui-button").ui.events.on("click",()=>{this.ui.close()}),this.appendChild(t)}createSubmitButton(){const t=new f;t.slot="actions",t.innerHTML=`
             <ui-button variant="full" color="primary">Submit</ui-button>
         `,t.querySelector("ui-button").ui.events.on("click",()=>{if(!this.name.ui.getValue()){this.name.ui.setInvalid(!0);return}this.uiStore.ui.update("visData",i=>(i.unshift({title:this.name.ui.getValue(),data:[]}),i)),this.ui.close()}),this.appendChild(t)}};n(Ot,"register",()=>{M.register(),f.register(),G.register(),b.register(),I.register(),H.register(),customElements.define("new-vis-data-dialog",Ot)});let at=Ot;const Si=a`
-    <ui-drawer-group title="Vis Data">
-        <ui-drawer-group-item>
-            <ui-button name="import" variant="full" color="primary" disabled>
-                Import
-            </ui-button>
-        </ui-drawer-group-item>
+    <ui-drawer-group-item>
+        <ui-button name="import" variant="full" color="primary" disabled>
+            Import
+        </ui-button>
+    </ui-drawer-group-item>
 
-        <ui-drawer-group-item>
-            <ui-button name="new" variant="full" color="secondary" disabled>
-                New Data
-            </ui-button>
-        </ui-drawer-group-item>
-    </ui-drawer-group>
-`,zt=class zt extends C{constructor(){super(),this.innerHTML=Si,this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout")}connectedCallback(){super.connectedCallback(),this.cleanup.add(this.uiStore.ui.on("visData",this.onVisData.bind(this),!0)),this.querySelector('ui-button[name="import"]').ui.events.on("click",this.onClickImport.bind(this)),this.querySelector("ui-button[name=new]").ui.events.on("click",this.onClickNewData.bind(this))}onVisData(t){if(!t)return;const e=[...this.children].slice(2);for(;e.length>0;)this.removeChild(e.pop());for(const i of t){const r=new nt;r.set(i),r.cleanup.add(r.ui.events.on("click",()=>{this.stackLayout.ui.clearStack(),this.stackLayout.ui.setPage("vis-data"),document.querySelector("pg-drawer").ui.setOpen(!1)})),r.cleanup.add(r.ui.events.on("delete",()=>{this.uiStore.ui.update("visData",s=>s.filter(l=>l.title!==i.title))}))}}onClickImport(){Dt(e=>{const i=JSON.parse(e);if(typeof(i==null?void 0:i.key)=="string"&&!(i!=null&&i.title)&&(i.title=i.key,delete i.key),typeof i.title!="string")throw'Nope, wrong data, "title" is missing!';if(!Array.isArray(i.data))throw'Nope, wrong data, "data" from type array is missing!';for(const r of i.data){if(typeof r.key!="string"&&typeof r.value!="string")throw"Nope, wrong data for entry, key/value pair missing!";if(r.lotto!==null&&typeof r.lotto!="string")throw'Nope, wrong data for entry, "lotto" is missing!';if(r.format!==null&&typeof r.format!="string")throw'Nope, wrong data for entry, "format" is missing!';if(r.thickness!==null&&typeof r.thickness!="number")throw'Nope, wrong data for entry, "thickness" is missing!';if(r.stamp!==null&&typeof r.stamp!="string")throw'Nope, wrong data for entry, "stamp" is missing!'}this.uiStore.ui.update("visData",r=>(r.unshift(i),r))})}onClickNewData(){const t=new at;document.body.appendChild(t),t.ui.events.on("close",()=>{document.body.removeChild(t)}),t.ui.open()}};n(zt,"register",()=>{C.register(),m.register(),b.register(),nt.register(),at.register(),customElements.define("pg-drawer-vis-data",zt)});let ue=zt;const Li=a`
+    <ui-drawer-group-item>
+        <ui-button name="new" variant="full" color="secondary" disabled>
+            New Data
+        </ui-button>
+    </ui-drawer-group-item>
+`,zt=class zt extends C{constructor(){super(),this.innerHTML=Si,this.ui.setTitle("Vis Data"),this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout")}connectedCallback(){super.connectedCallback(),this.cleanup.add(this.uiStore.ui.on("visData",this.onVisData.bind(this),!0)),this.querySelector('ui-button[name="import"]').ui.events.on("click",this.onClickImport.bind(this)),this.querySelector("ui-button[name=new]").ui.events.on("click",this.onClickNewData.bind(this))}onVisData(t){if(!t)return;const e=[...this.children].slice(2);for(;e.length>0;)this.removeChild(e.pop());for(const i of t){const r=new nt;r.set(i),r.cleanup.add(r.ui.events.on("click",()=>{this.stackLayout.ui.clearStack(),this.stackLayout.ui.setPage("vis-data"),document.querySelector("pg-drawer").ui.setOpen(!1)})),r.cleanup.add(r.ui.events.on("delete",()=>{this.uiStore.ui.update("visData",s=>s.filter(l=>l.title!==i.title))}))}}onClickImport(){Dt(e=>{const i=JSON.parse(e);if(typeof(i==null?void 0:i.key)=="string"&&!(i!=null&&i.title)&&(i.title=i.key,delete i.key),typeof i.title!="string")throw'Nope, wrong data, "title" is missing!';if(!Array.isArray(i.data))throw'Nope, wrong data, "data" from type array is missing!';for(const r of i.data){if(typeof r.key!="string"&&typeof r.value!="string")throw"Nope, wrong data for entry, key/value pair missing!";if(r.lotto!==null&&typeof r.lotto!="string")throw'Nope, wrong data for entry, "lotto" is missing!';if(r.format!==null&&typeof r.format!="string")throw'Nope, wrong data for entry, "format" is missing!';if(r.thickness!==null&&typeof r.thickness!="number")throw'Nope, wrong data for entry, "thickness" is missing!';if(r.stamp!==null&&typeof r.stamp!="string")throw'Nope, wrong data for entry, "stamp" is missing!'}this.uiStore.ui.update("visData",r=>(r.unshift(i),r))})}onClickNewData(){const t=new at;document.body.appendChild(t),t.ui.events.on("close",()=>{document.body.removeChild(t)}),t.ui.open()}};n(zt,"register",()=>{C.register(),m.register(),b.register(),nt.register(),at.register(),customElements.define("pg-drawer-vis-data",zt)});let ue=zt;const Li=a`
     <ui-drawer open>
         <div
             style="
@@ -1402,4 +1392,4 @@ ${JSON.stringify(r,null,4)}`);if(typeof(t==null?void 0:t.date)!="string")throw n
 
     <pg-app-bar></pg-app-bar>
     <pg-drawer></pg-drawer>
-`,Vt=class Vt extends HTMLElement{constructor(){super(),this.innerHTML=Ei,this.cleanup=new h,this.uiStore=this.querySelector("ui-store"),this.createStore(),this.stackLayout=this.querySelector("ui-stack-layout"),this.createStackLayout(),this.pgAppBar=this.querySelector("pg-app-bar"),this.pgDrawer=this.querySelector("pg-drawer")}connectedCallback(){this.pgDrawer.ui.setOpen(!0),this.cleanup.add(this.uiStore.ui.on("appBarTitle",this.onAppBarTitle.bind(this),!0)),this.cleanup.add(this.uiStore.ui.on("share",this.onShare.bind(this),!0)),this.setupNoPage()}disconnectedCallback(){this.cleanup.run()}createStore(){this.uiStore.ui.set("alertLists",[],!0),this.uiStore.ui.set("metalSheetLists",[],!0),this.uiStore.ui.set("vis",[],!0),this.uiStore.ui.set("visData",[],!0),this.uiStore.ui.set("gistIDs",{},!0),this.uiStore.ui.set("appBarTitle","",!1),this.uiStore.ui.set("share",null,!1),this.uiStore.ui.set("search",{active:!1},!1)}createStackLayout(){this.stackLayout.ui.events.on("change",({newPage:t})=>{if(this.stackLayout.ui.stackSize()>1?this.pgAppBar.itemBack.ui.enable():this.pgAppBar.itemBack.ui.disable(),!t){this.setupNoPage();return}switch(t.ui.getName()){case"alert-lists":this.setupAlertListsPage();break;case"metal-sheet-lists":this.setupMetalSheetListsPage();break;case"vis":break;case"vis-data":break;case"alert":this.setupAlertPage();break;default:this.setupNoPage()}}),this.stackLayout.ui.registerPage("alert-lists",()=>new _),this.stackLayout.ui.registerPage("metal-sheet-lists",()=>new tt),this.stackLayout.ui.registerPage("vis",()=>new et),this.stackLayout.ui.registerPage("vis-data",()=>new it)}setupMetalSheetListsPage(){throw new Error("Method not implemented.")}setupAlertPage(){this.pgAppBar.itemShare.ui.disable(),this.pgAppBar.itemSearch.ui.disable()}setupAlertListsPage(){this.pgAppBar.itemShare.ui.disable(),this.pgAppBar.itemSearch.ui.enable()}setupNoPage(){this.uiStore.ui.set("appBarTitle","PG: Vis"),this.pgAppBar.itemShare.ui.disable(),this.pgAppBar.itemSearch.ui.disable()}async onAppBarTitle(t){this.pgAppBar.itemTitle.ui.getItem().innerHTML=t||""}async onShare(t){t!==null?this.pgAppBar.itemShare.ui.enable():this.pgAppBar.itemShare.ui.disable()}};n(Vt,"register",()=>{I.register(),se.register(),S.register(),f.register(),Gt.register(),re.register(),Y.register(),C.register(),m.register(),b.register(),L.register(),E.register(),v.register(),oe.register(),he.register(),_.register(),tt.register(),et.register(),it.register(),customElements.define("pg-app",Vt)});let de=Vt;He({onRegistered(o){setTimeout(async()=>{try{await o.update()}catch(t){console.warn(`Auto update failed: ${t}`)}})}});de.register();
+`,Vt=class Vt extends HTMLElement{constructor(){super(),this.innerHTML=Ei,this.cleanup=new h,this.uiStore=this.querySelector("ui-store"),this.createStore(),this.stackLayout=this.querySelector("ui-stack-layout"),this.createStackLayout(),this.pgAppBar=this.querySelector("pg-app-bar"),this.pgDrawer=this.querySelector("pg-drawer")}connectedCallback(){this.pgDrawer.ui.setOpen(!0),this.cleanup.add(this.uiStore.ui.on("appBarTitle",this.onAppBarTitle.bind(this),!0)),this.cleanup.add(this.uiStore.ui.on("share",this.onShare.bind(this),!0)),this.setupNoPage()}disconnectedCallback(){this.cleanup.run()}createStore(){this.uiStore.ui.set("alertLists",[],!0),this.uiStore.ui.set("metalSheetLists",[],!0),this.uiStore.ui.set("vis",[],!0),this.uiStore.ui.set("visData",[],!0),this.uiStore.ui.set("gistIDs",{},!0),this.uiStore.ui.set("appBarTitle","",!1),this.uiStore.ui.set("share",null,!1),this.uiStore.ui.set("search",{active:!1},!1)}createStackLayout(){this.stackLayout.ui.events.on("change",({newPage:t})=>{if(this.stackLayout.ui.stackSize()>1?this.pgAppBar.itemBack.ui.enable():this.pgAppBar.itemBack.ui.disable(),!t){this.setupNoPage();return}switch(t.ui.getName()){case"alert-lists":this.setupAlertListsPage();break;case"metal-sheet-lists":this.setupMetalSheetListsPage();break;case"vis":break;case"vis-data":break;case"alert":this.setupAlertPage();break;default:this.setupNoPage()}}),this.stackLayout.ui.registerPage("alert-lists",()=>new _),this.stackLayout.ui.registerPage("metal-sheet-lists",()=>new tt),this.stackLayout.ui.registerPage("vis",()=>new et),this.stackLayout.ui.registerPage("vis-data",()=>new it)}setupMetalSheetListsPage(){}setupAlertPage(){this.pgAppBar.itemShare.ui.disable(),this.pgAppBar.itemSearch.ui.disable()}setupAlertListsPage(){this.pgAppBar.itemShare.ui.disable(),this.pgAppBar.itemSearch.ui.enable()}setupNoPage(){this.uiStore.ui.set("appBarTitle","PG: Vis"),this.pgAppBar.itemShare.ui.disable(),this.pgAppBar.itemSearch.ui.disable()}async onAppBarTitle(t){this.pgAppBar.itemTitle.ui.getItem().innerHTML=t||""}async onShare(t){t!==null?this.pgAppBar.itemShare.ui.enable():this.pgAppBar.itemShare.ui.disable()}};n(Vt,"register",()=>{I.register(),se.register(),S.register(),f.register(),Gt.register(),re.register(),Y.register(),C.register(),m.register(),b.register(),L.register(),E.register(),v.register(),oe.register(),he.register(),_.register(),tt.register(),et.register(),it.register(),customElements.define("pg-app",Vt)});let de=Vt;He({onRegistered(o){setTimeout(async()=>{try{await o.update()}catch(t){console.warn(`Auto update failed: ${t}`)}})}});de.register();
