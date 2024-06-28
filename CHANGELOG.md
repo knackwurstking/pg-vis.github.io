@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.0.12 [unreleased]
+## v0.0.12 2024-06-28
 
 - Fixed app-bar items for the "metal-sheet-lists" page
 - Added revisions number for each drawer group
