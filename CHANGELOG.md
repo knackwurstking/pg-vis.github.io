@@ -2,9 +2,12 @@
 
 ## TODO:
 
-- Add a share button (app-bar icon) for sharing the current metal-sheet-list
-- Add a small notes section on top for the metal-sheet-lists page
 - Add pull and push handler for gists
+- Add a small notes section on top for the metal-sheet-lists page
+
+## v0.0.15 2024-07-03
+
+- Share the current metal-sheet-list
 
 ## v0.0.14 2024-07-03
 
