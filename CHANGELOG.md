@@ -6,6 +6,11 @@
 - Add a small notes section on top for the metal-sheet-lists page
 - Add pull and push handler for gists
 
+## v0.0.14 2024-07-03
+
+- Improved overflow handling for the metal-sheet-lists-page
+- Fixed "Import" buttons (broken in v0.0.13)
+
 ## v0.0.13 2024-07-03
 
 - Create new metal-sheet-lists
