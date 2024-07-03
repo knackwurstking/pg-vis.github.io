@@ -1,5 +1,21 @@
 # Changelog
 
+## TODO:
+
+- Add a share button (app-bar icon) for sharing the current metal-sheet-list
+- Add a small notes section on top for the metal-sheet-lists page
+- Add pull and push handler for gists
+
+## v0.0.13 2024-07-03
+
+- Create new metal-sheet-lists
+- Edit current metal-sheet-list
+- Add new entries to the metal-sheet-list
+- Delete the current metal-sheet-list
+- Edit a single entry from the metal-sheet-list table, just click on the table entry
+- Drag'n'Drop for metal-sheet-list table entries
+- [ui version v0.2.2](https://github.com/knackwurstking/ui)
+
 ## v0.0.12 2024-06-28
 
 - Fixed app-bar items for the "metal-sheet-lists" page
