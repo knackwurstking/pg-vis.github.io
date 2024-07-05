@@ -1,9 +1,23 @@
 # Changelog
 
-## TODO:
+## v0.0.17 [unreleased]
 
-- Add pull and push handler for gists
-- Add a small notes section on top for the metal-sheet-lists page
+### TODO:
+
+- Add pull and push handler for Gist IDs
+
+  - Allow "push" to files instead of gist
+
+## v0.0.16 2024-07-05
+
+- Added confirmation dialog before deleting a drawer item
+- Kicked notes from the `MetalSheetList`
+- Replaced date with a timestamp from (downloaded) filename
+- Updated "date" for metal-sheet-lists data after a change
+- Fixed data share where `canShare` does not exist
+- Fixed edit dialog (submit) for metal-sheet-lists
+- Add user input via `innerHTML` instead of `innerText`
+- [ui version v0.2.3](https://github.com/knackwurstking/ui)
 
 ## v0.0.15 2024-07-03
 
