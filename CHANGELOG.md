@@ -1,6 +1,9 @@
 # Changelog
 
-## v0.0.17 [unreleased]
+## v0.0.17 2024-07-09
+
+- Added gist pull and push handlers
+- [ui version v0.2.4](https://github.com/knackwurstking/ui)
 
 ### TODO:
 
