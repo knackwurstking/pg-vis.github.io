@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.19 [unreleased]
+
+- [ ] Added icon-button alongside the import buttons, for exporting files
+- [ ] Replaced Gist ID text element with a input element and a copy button
+
+## v0.0.18 2024-07-10
+
+- Added the missing delete button for metal-sheet-lists entries
+- Added press info to appBarTitle for metal-sheet-lists pages
+
 ## v0.0.17 2024-07-09
 
 - Added gist pull and push handlers
