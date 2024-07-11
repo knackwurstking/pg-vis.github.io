@@ -1,14 +1,18 @@
 # Changelog
 
-## v0.0.19 [unreleased]
+## v0.0.19 2024-07-11
 
-- [ ] Added icon-button alongside the import buttons, for exporting files
-- [ ] Replaced Gist ID text element with a input element and a copy button
+- Removed `gistID` from data: `MetalSheetList`, `AlertList`
+- Fixed gist push, check differences and sort before
+- Fixed press editing for metal-sheet-lists
+- Data will be cleared before importing, or pull, a new gist revision
+- Added icon-button alongside the import buttons, for exporting files
+- [ui version v0.2.5](https://github.com/knackwurstking/ui)
 
 ## v0.0.18 2024-07-10
 
 - Added the missing delete button for metal-sheet-lists entries
-- Added press info to appBarTitle for metal-sheet-lists pages
+- Added press info to the `appBarTitle` store for metal-sheet-lists pages
 
 ## v0.0.17 2024-07-09
 
