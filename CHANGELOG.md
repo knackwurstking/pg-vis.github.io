@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.22 [unreleased]
+
+- [ ] Added vis items and page
+- [ ] Added vis bookmarks
+
+## v0.0.21 2024-07-12
+
+- Fixed press 0 not showing for drawer items
+- Zip metal-sheet files before downloading
+
 ## v0.0.20 2024-07-12
 
 - Moved press info to primary text (metal-sheet-lists)
