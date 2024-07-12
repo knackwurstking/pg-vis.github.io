@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.0.20 2024-07-12
+
+- Moved press info to primary text (metal-sheet-lists)
+- Changed cursor to pointer for metal-sheet table rows
+- Changed metal-sheet table row role to "button"
+- [ui version v0.2.6](https://github.com/knackwurstking/ui)
+
 ## v0.0.19 2024-07-11
 
 - Removed `gistID` from data: `MetalSheetList`, `AlertList`
