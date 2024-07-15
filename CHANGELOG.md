@@ -1,9 +1,15 @@
 # Changelog
 
-## v0.0.22 [unreleased]
+## v0.0.23 [unreleased]
 
-- [ ] Added vis items and page
-- [ ] Added vis bookmarks
+- [ ] Added bookmarks system
+
+## v0.0.22 2024-07-15
+
+- Allow downgrade and "repull" on a (gist) pull
+- Revision will raise up once after each successful (gist) push
+- Added vis and product page
+- [ui version v0.2.7](https://github.com/knackwurstking/ui)
 
 ## v0.0.21 2024-07-12
 
