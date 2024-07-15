@@ -1,8 +1,12 @@
 # Changelog
 
-## v0.0.23 [unreleased]
+## v0.0.24 [unreleased]
 
 - [ ] Added bookmarks system
+
+## v0.0.23 2024-07-15 - Quick Fix
+
+- Fixed vis import from gist
 
 ## v0.0.22 2024-07-15
 
