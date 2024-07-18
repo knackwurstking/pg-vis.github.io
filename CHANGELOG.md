@@ -1,8 +1,17 @@
 # Changelog
 
+## v0.0.25 [unreleased]
+
+- [ ] Added bookmarks system to vis
+
 ## v0.0.24 [unreleased]
 
-- [ ] Added bookmarks system
+- Fixed typo in pull alert, "already up to..."
+- Changed vis title when imported from a local text file
+- Add vis data entries as secondary text
+- [ui version v0.2.8](https://github.com/knackwurstking/ui)
+
+- [ ] Added a search bar for the vis page
 
 ## v0.0.23 2024-07-15 - Quick Fix
 
