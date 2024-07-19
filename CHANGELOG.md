@@ -4,15 +4,17 @@
 
 ### Added
 
-- Ignore case sensitive for all regex searches *(dev2)*
+- Ignore case sensitive for all regex searches
+- Pointer events block on scroll for "vis" page and the "pg-drawer" *(dev3)*
 
 ### Fixed
 
-- PGDrawer component HTML, this should fix some of the performance issues *(dev)*
+- PGDrawer component HTML, this should fix some of the performance issues
+- VisPage list rendering, this should fix some performance issues *(dev3)*
 
 ### Changed
 
-- [ui version v0.2.10](https://github.com/knackwurstking/ui) *(dev)*
+- [ui version v0.2.10](https://github.com/knackwurstking/ui)
 
 ## v0.0.26 2024-07-19
 
