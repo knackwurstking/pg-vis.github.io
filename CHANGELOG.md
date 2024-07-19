@@ -1,10 +1,11 @@
 # Changelog
 
-## v0.0.25 [unreleased]
+## v0.0.25 2024-07-19
 
-- [ ] Added bookmarks system to vis
+- Fixed app-bar title (vis-page)
+- Fixed git push
 
-## v0.0.24 [unreleased]
+## v0.0.24 2024-07-18
 
 - Fixed typo in pull alert, "already up to..."
 - Changed vis title when imported from a local text file
