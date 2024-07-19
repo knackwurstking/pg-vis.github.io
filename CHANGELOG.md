@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.26 2024-07-19
+
+- Added a vis-search-bar
+- [ui version v0.2.9](https://github.com/knackwurstking/ui)
+
 ## v0.0.25 2024-07-19
 
 - Fixed app-bar title (vis-page)
