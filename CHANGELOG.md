@@ -1,16 +1,16 @@
 # Changelog
 
-## v0.0.27 [unreleased]
+## v0.0.27 2024-07-19
 
 ### Added
 
 - Ignore case sensitive for all regex searches
-- Pointer events block on scroll for "vis" page and the "pg-drawer" *(dev3)*
+- Pointer events block on scroll for "vis" page and the "pg-drawer"
 
 ### Fixed
 
 - PGDrawer component HTML, this should fix some of the performance issues
-- VisPage list rendering, this should fix some performance issues *(dev3)*
+- VisPage list rendering, this should fix some performance issues
 
 ### Changed
 
