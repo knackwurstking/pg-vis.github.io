@@ -2,6 +2,7 @@
 
 ## v0.0.27 [unreleased]
 
+- Fixed pg-drawer component, this should fix some of the performance issues
 - [ui version v0.2.10](https://github.com/knackwurstking/ui)
 
 ## v0.0.26 2024-07-19
