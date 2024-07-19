@@ -8,7 +8,7 @@
 
 ### Fixed
 
-- PGDrawer component html, this should fix some of the performance issues *(dev)*
+- PGDrawer component HTML, this should fix some of the performance issues *(dev)*
 
 ### Changed
 
