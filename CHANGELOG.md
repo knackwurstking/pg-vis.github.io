@@ -3,6 +3,24 @@
 
 ## v0.0.28 [unreleased]
 
+### Changed
+
+- [ui version v0.2.11](https://github.com/knackwurstking/ui)
+
+### Fixed
+
+- Scroll (vis) list (hanging)
+- Close drawer after each click
+
+### Improved
+
+- serch-bar open/close (preformance)
+
+### Removed
+
+- [ ] Refresh on pull down
+- Pointer lock on scroll for drawer and vis list
+
 
 ## v0.0.27 2024-07-19
 
