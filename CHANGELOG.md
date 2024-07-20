@@ -18,7 +18,7 @@
 
 ### Removed
 
-- [ ] Refresh on pull down
+- Refresh on pull down (overscroll-behavior: none)
 - Pointer lock on scroll for drawer and vis list
 
 
