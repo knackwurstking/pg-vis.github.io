@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.29 2024-07-20
+
+### Changed
+
+- [ui version v0.2.12](https://github.com/knackwurstking/ui)
+
 
 ## v0.0.28 2024-07-20
 
