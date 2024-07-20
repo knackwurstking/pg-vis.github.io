@@ -1,10 +1,11 @@
 # Changelog
 
 
-## v0.0.28 [unreleased]
+## v0.0.28 2024-07-20
 
 ### Changed
 
+- Drawer will now open after go back to no page
 - [ui version v0.2.11](https://github.com/knackwurstking/ui)
 
 ### Fixed
