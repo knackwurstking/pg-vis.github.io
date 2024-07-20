@@ -14,7 +14,7 @@
 
 ### Improved
 
-- serch-bar open/close (preformance)
+- Search-bar open/close (Performance)
 
 ### Removed
 
