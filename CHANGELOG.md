@@ -1,9 +1,10 @@
 # Changelog
 
-## v0.0.29 2024-07-20
+## v0.0.29 2024-07-27
 
 ### Changed
 
+- Code clean up
 - [ui version v0.2.12](https://github.com/knackwurstking/ui)
 
 
