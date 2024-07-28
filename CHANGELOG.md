@@ -1,14 +1,52 @@
 # Changelog
 
-## v0.0.29 2024-07-27
+## Road to version v1.0.0
+
+### Added
+
+- Vis data page
+  - [ ] Add button for creating new lists (title, optional info)
+  - [ ] New button
+  - [ ] Edit button
+  - [ ] Delete button
+  - [ ] Drag'n'Drop
+- Vis data for the product page, in alphabetical order
+- Bookmarks, YouTube like with list for press 0-5
+- Open or close drawer groups (closed per default)
+
+### Improved
+
+- Vis list performance, on old hardware
+  - [x] Open or Close Search bar
+  - [ ] Product (page) rendering, if vis list is still rendering
+
+## v0.0.30 — [unreleased]
+
+### Added
+
+- Spinner, Vis list loading
+
+### Changed
+
+- Search bar is now always visible for the Vis page
+- [ui version v0.2.13](https://github.com/knackwurstking/ui)
+
+### Fixed
+
+- Search bar auto focus
+
+### Removed
+
+- Share for the Vis page (share will come back later)
+
+## v0.0.29 — 2024-07-27
 
 ### Changed
 
 - Code clean up
 - [ui version v0.2.12](https://github.com/knackwurstking/ui)
 
-
-## v0.0.28 2024-07-20
+## v0.0.28 — 2024-07-20
 
 ### Changed
 
@@ -28,7 +66,6 @@
 
 - Refresh on pull down (overscroll-behavior: none)
 - Pointer lock on scroll for drawer and vis list
-
 
 ## v0.0.27 2024-07-19
 
@@ -105,7 +142,7 @@
 - Added gist pull and push handlers
 - [ui version v0.2.4](https://github.com/knackwurstking/ui)
 
-### TODO:
+### TODO
 
 - Add pull and push handler for Gist IDs
 
