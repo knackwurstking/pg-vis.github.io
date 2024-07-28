@@ -4,7 +4,7 @@
 
 - [Changelog](#changelog)
   - [Road to version v1.0.0](#road-to-version-v100)
-  - [v0.0.30 [unreleased]](#v0030-unreleased)
+  - [v0.0.30 2024-07-28](#v0030-2024-07-28)
   - [v0.0.29 2024-07-27](#v0029-2024-07-27)
   - [v0.0.28 2024-07-20](#v0028-2024-07-20)
   - [v0.0.27 2024-07-19](#v0027-2024-07-19)
@@ -39,6 +39,17 @@
 
 **Added**:
 
+- [ ] New entry below the drawer "Vis" group, named "Vis Lists"
+
+  - [ ] Button: Add new list
+  - [ ] Delete a list, besides predefined lists
+  - [ ] "Bookmarks" (predefined)
+  - [ ] "Press 0" (predefined)
+  - [ ] "Press 2" (predefined)
+  - [ ] "Press 3" (predefined)
+  - [ ] "Press 4" (predefined)
+  - [ ] "Press 5" (predefined)
+
 - Bookmarks, YouTube like with lists for press 0-5
 - Vis data page
   - [ ] Add button for creating new lists (title, optional info)
@@ -59,24 +70,13 @@
 
 **Added**:
 
-- [ ] New entry below the drawer "Vis" group, named "Vis Lists"
-
-  - [ ] Button: Add new list
-  - [ ] Delete a list, besides predefined lists
-  - [ ] "Bookmarks" (predefined)
-  - [ ] "Press 0" (predefined)
-  - [ ] "Press 2" (predefined)
-  - [ ] "Press 3" (predefined)
-  - [ ] "Press 4" (predefined)
-  - [ ] "Press 5" (predefined)
-
-- Fold and unfold drawer groups, initially folded
-- Spinner, Vis list loading
-- Export handler Vis
+- Fold and unfold drawer groups (initially folded)
+- Spinner while vis list is loading
+- Export handler for drawer vis group
 
 **Changed**:
 
-- SearchBar is now always visible for the Vis page
+- `SearchBar` is now always visible for the Vis page
 - [ui version v0.2.13](https://github.com/knackwurstking/ui)
 
 **Fixed**:
@@ -87,8 +87,8 @@
 
 **Removed**:
 
-- Delete metal-sheet-list table button from the page
-- Share for the Vis page (share will come back later)
+- Delete button from the metal-sheet-list page
+- Share for the vis page
 
 ## v0.0.29 2024-07-27
 
