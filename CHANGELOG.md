@@ -1,9 +1,45 @@
 # Changelog
 
+<!--toc:start-->
+
+- [Changelog](#changelog)
+  - [Road to version v1.0.0](#road-to-version-v100)
+  - [v0.0.30 [unreleased]](#v0030-unreleased)
+  - [v0.0.29 2024-07-27](#v0029-2024-07-27)
+  - [v0.0.28 2024-07-20](#v0028-2024-07-20)
+  - [v0.0.27 2024-07-19](#v0027-2024-07-19)
+  - [v0.0.26 2024-07-19](#v0026-2024-07-19)
+  - [v0.0.25 2024-07-19](#v0025-2024-07-19)
+  - [v0.0.24 2024-07-18](#v0024-2024-07-18)
+  - [v0.0.23 2024-07-15 Quick Fix](#v0023-2024-07-15-quick-fix)
+  - [v0.0.22 2024-07-15](#v0022-2024-07-15)
+  - [v0.0.21 2024-07-12](#v0021-2024-07-12)
+  - [v0.0.20 2024-07-12](#v0020-2024-07-12)
+  - [v0.0.19 2024-07-11](#v0019-2024-07-11)
+  - [v0.0.18 2024-07-10](#v0018-2024-07-10)
+  - [v0.0.17 2024-07-09](#v0017-2024-07-09)
+  - [v0.0.16 2024-07-05](#v0016-2024-07-05)
+  - [v0.0.15 2024-07-03](#v0015-2024-07-03)
+  - [v0.0.14 2024-07-03](#v0014-2024-07-03)
+  - [v0.0.13 2024-07-03](#v0013-2024-07-03)
+  - [v0.0.12 2024-06-28](#v0012-2024-06-28)
+  - [v0.0.11 2024-06-27](#v0011-2024-06-27)
+  - [v0.0.10 2024-06-27](#v0010-2024-06-27)
+  - [v0.0.9 2024-06-27](#v009-2024-06-27)
+  - [v0.0.8 2024-06-26](#v008-2024-06-26)
+  - [v0.0.7 2024-06-23](#v007-2024-06-23)
+  - [v0.0.5 2024-06-23](#v005-2024-06-23)
+  - [v0.0.4 2024-06-23](#v004-2024-06-23)
+  - [v0.0.3](#v003)
+  - [v0.0.2](#v002)
+  - [v0.0.1](#v001)
+  <!--toc:end-->
+
 ## Road to version v1.0.0
 
-### Added
+**Added**:
 
+- Bookmarks, YouTube like with lists for press 0-5
 - Vis data page
   - [ ] Add button for creating new lists (title, optional info)
   - [ ] New button
@@ -11,76 +47,85 @@
   - [ ] Delete button
   - [ ] Drag'n'Drop
 - Vis data for the product page, in alphabetical order
-- Bookmarks, YouTube like with list for press 0-5
-- Open or close drawer groups (closed per default)
+- ~Open or close drawer groups (closed per default)~
 
-### Improved
+**Improved**:
 
 - Vis list performance, on old hardware
   - [x] Open or Close Search bar
-  - [ ] Product (page) rendering, if vis list is still rendering
+  - [ ] ~Product (page) rendering, if vis list is still rendering~
 
-## v0.0.30 — [unreleased]
+## v0.0.30 [unreleased]
 
-### Added
+**Added**:
 
+- [ ] Fold and unfold drawer groups, get last state (fold/unfold) from the UIStore
+- [ ] New entry below the drawer "Vis" group, named "Vis Lists"
+  - [ ] Button: Add new list
+  - [ ] Delete a list, besides predefined lists
+  - [ ] "Bookmarks" (predefined)
+  - [ ] "Press 0" (predefined)
+  - [ ] "Press 2" (predefined)
+  - [ ] "Press 3" (predefined)
+  - [ ] "Press 4" (predefined)
+  - [ ] "Press 5" (predefined)
 - Spinner, Vis list loading
 - Export handler Vis
 
-### Changed
+**Changed**:
 
-- Search bar is now always visible for the Vis page
+- SearchBar is now always visible for the Vis page
 - [ui version v0.2.13](https://github.com/knackwurstking/ui)
 
-### Fixed
+**Fixed**:
 
-- Search bar auto focus
+- SearchBar auto focus
 
-### Removed
+**Removed**:
 
 - Share for the Vis page (share will come back later)
 
-## v0.0.29 — 2024-07-27
+## v0.0.29 2024-07-27
 
-### Changed
+**Changed**:
 
 - Code clean up
 - [ui version v0.2.12](https://github.com/knackwurstking/ui)
 
-## v0.0.28 — 2024-07-20
+## v0.0.28 2024-07-20
 
-### Changed
+**Changed**:
 
 - Drawer will now open after go back to no page
 - [ui version v0.2.11](https://github.com/knackwurstking/ui)
 
-### Fixed
+**Fixed**:
 
 - Scroll (vis) list (hanging)
 - Close drawer after each click
 
-### Improved
+**Improved**:
 
 - Search-bar open/close (Performance)
 
-### Removed
+**Removed**:
 
 - Refresh on pull down (overscroll-behavior: none)
 - Pointer lock on scroll for drawer and vis list
 
 ## v0.0.27 2024-07-19
 
-### Added
+**Added**:
 
 - Ignore case sensitive for all regex searches
 - Pointer events block on scroll for "vis" page and the "pg-drawer"
 
-### Fixed
+**Fixed**:
 
-- PGDrawer component HTML, this should fix some of the performance issues
+- PGDrawer component HTML, this should fix some performance issues
 - VisPage list rendering, this should fix some performance issues
 
-### Changed
+**Changed**:
 
 - [ui version v0.2.10](https://github.com/knackwurstking/ui)
 
@@ -101,7 +146,7 @@
 - Add vis data entries as secondary text
 - [ui version v0.2.8](https://github.com/knackwurstking/ui)
 
-## v0.0.23 2024-07-15 - Quick Fix
+## v0.0.23 2024-07-15 Quick Fix
 
 - Fixed vis import from gist
 
@@ -143,7 +188,7 @@
 - Added gist pull and push handlers
 - [ui version v0.2.4](https://github.com/knackwurstking/ui)
 
-### TODO
+**TODO**:
 
 - Add pull and push handler for Gist IDs
 
@@ -185,7 +230,7 @@
 - Added revisions number for each drawer group
 - Added drawer gist item for "alert-lists"
 
-### Tweaks
+**Tweaks**:
 
 - Reimport all (gists) data
 
