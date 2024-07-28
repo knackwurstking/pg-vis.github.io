@@ -25,6 +25,7 @@
 ### Added
 
 - Spinner, Vis list loading
+- Export handler Vis
 
 ### Changed
 
