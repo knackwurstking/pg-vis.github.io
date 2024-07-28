@@ -55,7 +55,7 @@
   - [x] Open or Close Search bar
   - [ ] ~Product (page) rendering, if vis list is still rendering~
 
-## v0.0.30 [unreleased]
+## v0.0.30 2024-07-28
 
 **Added**:
 
