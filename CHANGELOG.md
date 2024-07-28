@@ -4,6 +4,7 @@
 
 - [Changelog](#changelog)
   - [Road to version v1.0.0](#road-to-version-v100)
+  - [v0.0.31 [unreleased]](#v0031-unreleased)
   - [v0.0.30 2024-07-28](#v0030-2024-07-28)
   - [v0.0.29 2024-07-27](#v0029-2024-07-27)
   - [v0.0.28 2024-07-20](#v0028-2024-07-20)
@@ -39,18 +40,6 @@
 
 **Added**:
 
-- [ ] New entry below the drawer "Vis" group, named "Vis Lists"
-
-  - [ ] Button: Add new list
-  - [ ] Delete a list, besides predefined lists
-  - [ ] "Bookmarks" (predefined)
-  - [ ] "Press 0" (predefined)
-  - [ ] "Press 2" (predefined)
-  - [ ] "Press 3" (predefined)
-  - [ ] "Press 4" (predefined)
-  - [ ] "Press 5" (predefined)
-
-- Bookmarks, YouTube like with lists for press 0-5
 - Vis data page
   - [ ] Add button for creating new lists (title, optional info)
   - [ ] New button
@@ -65,6 +54,25 @@
 - Vis list performance, on old hardware
   - [x] Open or Close Search bar
   - [ ] ~Product (page) rendering, if vis list is still rendering~
+
+## v0.0.31 [unreleased]
+
+**Added**:
+
+- [ ] Drawer group "Vis Lists"
+  - [ ] Button: Add new list
+  - [ ] Delete a list, besides predefined lists
+  - [ ] "Bookmarks" (predefined)
+  - [ ] "Press 0" (predefined)
+  - [ ] "Press 2" (predefined)
+  - [ ] "Press 3" (predefined)
+  - [ ] "Press 4" (predefined)
+  - [ ] "Press 5" (predefined)
+
+**Changed**:
+
+- Code formatting
+- [ui version v0.2.14](https://github.com/knackwurstking/ui)
 
 ## v0.0.30 2024-07-28
 
