@@ -81,11 +81,13 @@
 
 **Fixed**:
 
+- Titles for all meta-sheet related dialogs
 - `SearchBar` auto focus
 - Broken `ImportDialog` submit and dialog titles
 
 **Removed**:
 
+- Delete metal-sheet-list table button from the page
 - Share for the Vis page (share will come back later)
 
 ## v0.0.29 2024-07-27
