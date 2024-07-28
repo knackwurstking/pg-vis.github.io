@@ -59,8 +59,8 @@
 
 **Added**:
 
-- [ ] Fold and unfold drawer groups, get last state (fold/unfold) from the UIStore
 - [ ] New entry below the drawer "Vis" group, named "Vis Lists"
+
   - [ ] Button: Add new list
   - [ ] Delete a list, besides predefined lists
   - [ ] "Bookmarks" (predefined)
@@ -69,6 +69,8 @@
   - [ ] "Press 3" (predefined)
   - [ ] "Press 4" (predefined)
   - [ ] "Press 5" (predefined)
+
+- Fold and unfold drawer groups, initially folded
 - Spinner, Vis list loading
 - Export handler Vis
 
@@ -79,7 +81,8 @@
 
 **Fixed**:
 
-- SearchBar auto focus
+- `SearchBar` auto focus
+- Broken `ImportDialog` submit and dialog titles
 
 **Removed**:
 
