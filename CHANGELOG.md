@@ -74,6 +74,11 @@
 - Code formatting
 - [ui version v0.2.14](https://github.com/knackwurstking/ui)
 
+**Fixed**:
+
+- `PushDialog` constructor query select, moved to render method
+- `NewVisDataDialog` constructor query select, moved to render method
+
 ## v0.0.30 2024-07-28
 
 **Added**:
