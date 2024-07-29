@@ -40,25 +40,14 @@
 
 **Added**:
 
-- Vis data page
+- [ ] Vis data page
   - [ ] Add button for creating new lists (title, optional info)
   - [ ] New button
   - [ ] Edit button
   - [ ] Delete button
   - [ ] Drag'n'Drop
-- Vis data for the product page, in alphabetical order
-- ~Open or close drawer groups (closed per default)~
-
-**Improved**:
-
-- Vis list performance, on old hardware
-  - [x] Open or Close Search bar
-  - [ ] ~Product (page) rendering, if vis list is still rendering~
-
-## v0.0.31 [unreleased]
-
-**Added**:
-
+- [ ] Vis data for the product page, in alphabetical order
+- [x] Open or close drawer groups, initially closed
 - [ ] Drawer group "Vis Lists"
   - [ ] Button: Add new list
   - [ ] Delete a list, besides predefined lists
@@ -68,6 +57,14 @@
   - [ ] "Press 3" (predefined)
   - [ ] "Press 4" (predefined)
   - [ ] "Press 5" (predefined)
+
+**Improved**:
+
+- Vis list performance, on old hardware
+  - [x] Open or Close Search bar
+  - [ ] ~Product (page) rendering, if vis list is still rendering~
+
+## v0.0.31 [unreleased]
 
 **Changed**:
 
