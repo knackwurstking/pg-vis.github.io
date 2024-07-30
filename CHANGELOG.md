@@ -49,9 +49,9 @@
 - [ ] Vis data for the product page, in alphabetical order
 - [x] Open or close drawer groups, initially closed
 - [ ] Drawer group "Vis Lists"
+  - [x] Import and download button
   - [ ] Button: Add new list
   - [ ] Delete a list, besides predefined lists
-  - [ ] "Bookmarks" (predefined)
   - [ ] "Press 0" (predefined)
   - [ ] "Press 2" (predefined)
   - [ ] "Press 3" (predefined)
@@ -65,6 +65,10 @@
   - [ ] ~Product (page) rendering, if vis list is still rendering~
 
 ## v0.0.31 [unreleased]
+
+**Added**:
+
+- Drawer group "Vis Lists"
 
 **Changed**:
 
