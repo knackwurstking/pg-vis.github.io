@@ -1623,7 +1623,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
       >
         <div class="list"></div>
       </div>
-    `}set(t){this.data=t}setAppBarTitle(){this.uiStore.ui.set("appBarTitle",this.data?`Vis Lists - ${this.data.name}`:"Vis Lists")}renderData(){const t=this.querySelector(".list");for(;t.firstChild;)t.removeChild(t.firstChild);if(!this.data)return;const e=new pt;for(const s of this.data.data)t.appendChild(Fi({product:s,events:e,ripple:!0}).element)}};K(ni,"register",()=>{customElements.define("vis-lists-page",ni)});let Se=ni;const Wr=Z`
+    `}set(t){this.data=t}setAppBarTitle(){this.uiStore.ui.set("appBarTitle",this.data?`Vis Listen - ${this.data.name}`:"Vis Listen")}renderData(){const t=this.querySelector(".list");for(;t.firstChild;)t.removeChild(t.firstChild);if(!this.data)return;const e=new pt;for(const s of this.data.data)t.appendChild(Fi({product:s,events:e,ripple:!0}).element)}};K(ni,"register",()=>{customElements.define("vis-lists-page",ni)});let Se=ni;const Wr=Z`
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
     <g
