@@ -68,7 +68,8 @@
 
 **Added**:
 
-- Drawer group "Vis Lists"
+- Drawer group "Vis List"
+- New page `VisListsPage`
 
 **Changed**:
 
@@ -79,6 +80,7 @@
 
 - `PushDialog` constructor query select, moved to render method
 - `NewVisDataDialog` constructor query select, moved to render method
+- `SearchBar` height
 
 ## v0.0.30 2024-07-28
 
