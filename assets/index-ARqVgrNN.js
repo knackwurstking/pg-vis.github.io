@@ -1609,7 +1609,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
         storageprefix="pg-vis:search:"
         storagekey=""
       ></ui-search>
-    `,this.input=this.shadowRoot.querySelector("ui-search")}disconnectedCallback(){this.setActive(null)}attributeChangedCallback(t,e,s){switch(t){case"title":this.setTitle(s);break;case"active":this.setActive(s);break;case"prefix":this.setPrefix(s);break}}setTitle(t){this.input.ui.title=t||""}setActive(t){t===null?this.stackLayout.style.setProperty("--search-bar-height","0rem"):(this.stackLayout.style.setProperty("--search-bar-height","4.5rem"),this.ui.input().ui.focus())}setPrefix(t){this.input.ui.storageprefix="pg-vis:search:"+t||""}};K(te,"register",()=>{customElements.define("search-bar",te)}),K(te,"observedAttributes",["title","active","prefix"]);let Ii=te;const ni=class ni extends kt{constructor(){super(),this._data=null,this.render()}get data(){return this._data}set data(t){this._data=t,this.setAppBarTitle(),this.renderData()}render(){this.innerHTML=Z`
+    `,this.input=this.shadowRoot.querySelector("ui-search")}disconnectedCallback(){this.setActive(null)}attributeChangedCallback(t,e,s){switch(t){case"title":this.setTitle(s);break;case"active":this.setActive(s);break;case"prefix":this.setPrefix(s);break}}setTitle(t){this.input.ui.title=t||""}setActive(t){t===null?this.stackLayout.style.setProperty("--search-bar-height","0rem"):(this.stackLayout.style.setProperty("--search-bar-height","4.5rem"),this.ui.input().ui.focus())}setPrefix(t){this.input.ui.storageprefix="pg-vis:search:"+t||""}};K(te,"register",()=>{customElements.define("search-bar",te)}),K(te,"observedAttributes",["title","active","prefix"]);let Ii=te;const ni=class ni extends kt{constructor(){super(),this._data=null,this.uiStore=document.querySelector("ui-store"),this.render()}get data(){return this._data}set data(t){this._data=t,this.setAppBarTitle(),this.renderData()}render(){this.innerHTML=Z`
       <div
         class="no-scrollbar container"
         style="
@@ -1623,7 +1623,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
       >
         <div class="list"></div>
       </div>
-    `}set(t){this.data=t}setAppBarTitle(){this.uiStore.ui.set("setAppBarTitle",this.list?`Vis Lists - ${this.data.name}`:"Vis Lists")}renderData(){const t=this.querySelector(".list");for(;t.firstChild;)t.removeChild(t.firstChild);if(!this.data)return;const e=new pt;for(const s of this.data.data)t.appendChild(Fi({product:s,events:e,ripple:!0}).element)}};K(ni,"register",()=>{customElements.define("vis-lists-page",ni)});let Se=ni;const Wr=Z`
+    `}set(t){this.data=t}setAppBarTitle(){this.uiStore.ui.set("appBarTitle",this.data?`Vis Lists - ${this.data.name}`:"Vis Lists")}renderData(){const t=this.querySelector(".list");for(;t.firstChild;)t.removeChild(t.firstChild);if(!this.data)return;const e=new pt;for(const s of this.data.data)t.appendChild(Fi({product:s,events:e,ripple:!0}).element)}};K(ni,"register",()=>{customElements.define("vis-lists-page",ni)});let Se=ni;const Wr=Z`
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
     <g
