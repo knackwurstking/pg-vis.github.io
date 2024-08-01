@@ -68,7 +68,7 @@
 
 **Added**:
 
-- Drawer group "Vis List"
+- Drawer group "Vis Listen"
 - New page `VisListsPage`
 
 **Changed**:
