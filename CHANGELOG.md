@@ -48,15 +48,15 @@
   - [ ] Drag'n'Drop
 - [ ] Vis data for the product page, in alphabetical order
 - [x] Open or close drawer groups, initially closed
-- [ ] Drawer group "Vis Lists"
+- [x] Drawer group "Vis Lists"
   - [x] Import and download button
-  - [ ] Button: Add new list
-  - [ ] Delete a list, besides predefined lists
-  - [ ] "Press 0" (predefined)
-  - [ ] "Press 2" (predefined)
-  - [ ] "Press 3" (predefined)
-  - [ ] "Press 4" (predefined)
-  - [ ] "Press 5" (predefined)
+  - [x] Button: Add new list
+  - [x] Delete a list, besides predefined lists
+  - [x] "Press 0" (predefined)
+  - [x] "Press 2" (predefined)
+  - [x] "Press 3" (predefined)
+  - [x] "Press 4" (predefined)
+  - [x] "Press 5" (predefined)
 
 **Improved**:
 
@@ -64,10 +64,11 @@
   - [x] Open or Close Search bar
   - [ ] ~Product (page) rendering, if vis list is still rendering~
 
-## v0.0.31 [unreleased]
+## v0.0.31 2024-08-05
 
 **Added**:
 
+- Bookmarks (icon) button for the product page
 - Drawer group "Vis Listen"
 - New page `VisListsPage`
 
