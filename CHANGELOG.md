@@ -68,7 +68,12 @@
 
 **Added**:
 
-- [ ] New drawer group "Vis Data" + page [work-in-progress]
+- [x] Drawer group "Vis Data"
+- [ ] Page "Vis Data" [work-in-progress]
+
+**Changed**:
+
+- [x] New button text (content) for metal-sheet-lists drawer group
 
 **Removed**:
 
