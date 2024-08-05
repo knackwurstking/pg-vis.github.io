@@ -1552,7 +1552,6 @@ https://github.com/nodeca/pako/blob/main/LICENSE
       <pg-drawer-item-import
         storegistkey="${it.visData}"
         title="${dr}"
-        disabled
       ></pg-drawer-item-import>
 
       <pg-drawer-item-new type="${Ot}"></pg-drawer-item-new>
