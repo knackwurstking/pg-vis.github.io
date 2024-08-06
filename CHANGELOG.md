@@ -41,45 +41,30 @@
 **Added**:
 
 - [ ] Vis data page
-  - [ ] Add button for creating new lists (title, optional info)
-  - [ ] New button
-  - [ ] Edit button
-  - [ ] Delete button
   - [ ] Drag'n'Drop
 - [ ] Vis data for the product page, in alphabetical order?
-- [x] Open or close drawer groups, initially closed
-- [x] Drawer group "Vis Lists"
-  - [x] ~Import and download button~
-  - [x] ~Button: Add new list~
-  - [x] ~Delete a list, besides predefined lists~
-  - [x] "Press 0" (predefined)
-  - [x] "Press 2" (predefined)
-  - [x] "Press 3" (predefined)
-  - [x] "Press 4" (predefined)
-  - [x] "Press 5" (predefined)
 
 **Improved**:
 
 - Vis list performance, on old hardware
-  - [x] Open or Close Search bar
   - [ ] ~Product (page) rendering, if vis list is still rendering~
 
-## v0.0.32 [unreleased]
+## v0.0.32 2024-08-06
 
 **Added**:
 
-- [x] Drawer group "Vis Data"
-- [ ] Page "Vis Data" [work-in-progress]
+- Drawer group "Vis Data"
+- Page "Vis Data" [work-in-progress]
 
 **Changed**:
 
-- [x] New button text (content) for metal-sheet-lists drawer group
-- [ ] [ui version v0.2.15](https://github.com/knackwurstking/ui) [work-in-progress]
+- New button text (content) for metal-sheet-lists drawer group
+- [ui version v0.2.15](https://github.com/knackwurstking/ui) [work-in-progress]
 
 **Removed**:
 
-- [x] Import button from drawer group "Vis Listen"
-- [x] New button from drawer group "Vis Listen"
+- Import button from drawer group "Vis Listen"
+- New button from drawer group "Vis Listen"
 
 ## v0.0.31 2024-08-05
 
