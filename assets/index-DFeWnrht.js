@@ -1535,55 +1535,68 @@ ${JSON.stringify(e,null,4)}`);if(typeof _.lotto!="string"||typeof _.name!="strin
         "
         class="product-list"
       ></ul>
-    `,this.uiStore.ui.set("appBarTitle","Vis Data"),this.querySelector('[name="new-entry"]').ui.events.on("click",()=>{this.stackLayout.ui.set(it.visDataEntry,e=>{e.set({key:"",value:"",lotto:null,format:null,thickness:null,stamp:null})})})}connectedCallback(){super.connectedCallback(),this.ui.name=it.visData}set(t){const e=this.querySelector(".product-list");this.uiStore.ui.set("appBarTitle",`Vis Data - ${t.title}`);const r=new pt;r.on("click",a=>{this.stackLayout.ui.set(it.visDataEntry,s=>{s.set(a)})});for(const a of t.data)e.appendChild(Fr({entry:a,events:r,ripple:!0}))}};K(ri,"register",()=>{customElements.define("vis-data-page",ri)});let Ae=ri;const si=class si extends yt{constructor(){super(),this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout"),this.render()}render(){this.style.paddingTop="var(--ui-app-bar-height)",this.innerHTML=P`
-      <ui-flex-grid style="height: 100%;" gap="0.5rem">
-        <ui-flex-grid-item class="inputs">
-          <ui-flex-grid gap="0.5rem;">
-            <ui-flex-grid-item>
-              <ui-input name="key" type="text" title="Key"></ui-input>
-            </ui-flex-grid-item>
+    `,this.uiStore.ui.set("appBarTitle","Vis Data"),this.querySelector('[name="new-entry"]').ui.events.on("click",()=>{this.stackLayout.ui.set(it.visDataEntry,e=>{e.set({key:"",value:"",lotto:null,format:null,thickness:null,stamp:null})})})}connectedCallback(){super.connectedCallback(),this.ui.name=it.visData}set(t){const e=this.querySelector(".product-list");this.uiStore.ui.set("appBarTitle",`Vis Data - ${t.title}`);const r=new pt;r.on("click",a=>{this.stackLayout.ui.set(it.visDataEntry,s=>{s.set(a)})});for(const a of t.data)e.appendChild(Fr({entry:a,events:r,ripple:!0}))}};K(ri,"register",()=>{customElements.define("vis-data-page",ri)});let Ae=ri;const si=class si extends yt{constructor(){super(),this.uiStore=document.querySelector("ui-store"),this.stackLayout=document.querySelector("ui-stack-layout"),this.render()}render(){this.style.paddingTop="var(--ui-app-bar-height)",this.style.height="100%",this.innerHTML=P`
+      <div
+        class="inputs"
+        style="
+          width: 100%;
+          height: calc(100% - 3rem);
+          overflow: hidden;
+        "
+      >
+        <div
+          class="no-scrollbar"
+          style="
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+          "
+        >
+          <ui-input name="key" type="text" title="Key"></ui-input>
 
-            <ui-flex-grid-item>
-              <ui-textarea
-                name="value"
-                type="text"
-                title="Value"
-                rows="10"
-              ></ui-textarea>
-            </ui-flex-grid-item>
+          <br />
 
-            <ui-flex-grid-item>
-              <ui-input name="lotto" type="text" title="Lotto"></ui-input>
-            </ui-flex-grid-item>
+          <ui-textarea
+            name="value"
+            type="text"
+            title="Value"
+            rows="10"
+          ></ui-textarea>
 
-            <ui-flex-grid-item>
-              <ui-input name="format" type="text" title="Format"></ui-input>
-            </ui-flex-grid-item>
+          <br />
 
-            <ui-flex-grid-item>
-              <ui-input name="stamp" type="string" title="Stamp"></ui-input>
-            </ui-flex-grid-item>
+          <ui-input name="lotto" type="text" title="Lotto"></ui-input>
 
-            <ui-flex-grid-item>
-              <ui-input
-                name="thickness"
-                type="number"
-                title="Thickness"
-              ></ui-input>
-            </ui-flex-grid-item>
-          </ui-flex-grid>
-        </ui-flex-grid-item>
+          <br />
 
-        <ui-flex-grid-item class="actions" flex="0">
-          <ui-flex-grid-row justify="flex-end" gap="0.5rem">
-            <ui-flex-grid-item flex="0">
-              <ui-button name="submit" variant="full" color="primary">
-                Submit
-              </ui-button>
-            </ui-flex-grid-item>
-          </ui-flex-grid-row>
-        </ui-flex-grid-item>
-      </ui-flex-grid>
+          <ui-input name="format" type="text" title="Format"></ui-input>
+
+          <br />
+
+          <ui-input name="stamp" type="string" title="Stamp"></ui-input>
+
+          <br />
+
+          <ui-input name="thickness" type="number" title="Thickness"></ui-input>
+        </div>
+      </div>
+
+      <div
+        class="actions"
+        style="
+          width: 100%;
+          height: 2.5rem;
+          padding-top: var(--ui-spacing);
+        "
+      >
+        <ui-flex-grid-row justify="flex-end" gap="0.5rem">
+          <ui-flex-grid-item flex="0">
+            <ui-button name="submit" variant="full" color="primary">
+              Submit
+            </ui-button>
+          </ui-flex-grid-item>
+        </ui-flex-grid-row>
+      </div>
     `,this.querySelector('ui-button[name="submit"]').ui.events.on("click",()=>{this.stackLayout.ui.goBack()})}set(t){}};K(si,"register",()=>{customElements.define("vis-data-entry-page",si)});let Le=si;const ni=class ni extends yt{constructor(){super(),this._data=null,this.uiStore=document.querySelector("ui-store"),this.render()}get data(){return this._data}set data(t){this._data=t,this.setAppBarTitle(),this.renderData()}render(){this.innerHTML=P`
       <div
         class="no-scrollbar container"
