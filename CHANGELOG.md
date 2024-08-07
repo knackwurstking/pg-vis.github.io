@@ -38,29 +38,35 @@
 
 ## v0.0.33 [unreleased]
 
+**TODO**:
+
+- [ ] Clean up this `pageNames.*` and `storeKey` mess [work-in-progress]
+
 **Added**:
 
-- [ ] Product page data (sorted) [work-in-progress]
+- Product page vis-data (sorted)
+- [x] "GistID" drawer item [work-in-progress]
+- [ ] Check for build number on each app start, do quick fixes after an update [work-in-progress]
 
 **Changed**:
 
-- Sort vis-data lists and entries
+- Sort all vis-data lists and entries
 
 **Fixed**:
 
-- [x] `VisDataEntryPage` submit data, replace old entries after a key change [work-in-progress]
+- `VisDataEntryPage` submit data, replace old entries after a key change
 
 ## v0.0.32 2024-08-06
 
 **Added**:
 
 - Drawer group "Vis Data"
-- Page "Vis Data" [work-in-progress]
+- Page "Vis Data"
 
 **Changed**:
 
 - New button text (content) for metal-sheet-lists drawer group
-- [ui version v0.2.15](https://github.com/knackwurstking/ui) [work-in-progress]
+- [ui version v0.2.15](https://github.com/knackwurstking/ui)
 
 **Removed**:
 
