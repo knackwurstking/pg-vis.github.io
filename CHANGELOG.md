@@ -49,6 +49,16 @@
 - Vis list performance, on old hardware
   - [ ] ~Product (page) rendering, if vis list is still rendering~
 
+## v0.0.33 [unreleased]
+
+**Added**:
+
+- [ ] Product page data (sorted) [work-in-progress]
+
+**Changed**:
+
+- Vis data list sort lists and entries
+
 ## v0.0.32 2024-08-06
 
 **Added**:
