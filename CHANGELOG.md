@@ -36,19 +36,6 @@
   - [v0.0.1](#v001)
   <!--toc:end-->
 
-## Road to version v1.0.0
-
-**Added**:
-
-- [ ] Vis data page
-  - [ ] Drag'n'Drop
-- [ ] Vis data for the product page, in alphabetical order?
-
-**Improved**:
-
-- Vis list performance, on old hardware
-  - [ ] ~Product (page) rendering, if vis list is still rendering~
-
 ## v0.0.33 [unreleased]
 
 **Added**:
@@ -57,7 +44,11 @@
 
 **Changed**:
 
-- Vis data list sort lists and entries
+- Sort vis-data lists and entries
+
+**Fixed**:
+
+- [x] `VisDataEntryPage` submit data, replace old entries after a key change [work-in-progress]
 
 ## v0.0.32 2024-08-06
 
