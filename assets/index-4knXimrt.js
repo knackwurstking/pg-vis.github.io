@@ -1146,7 +1146,7 @@ var Mr=Object.defineProperty;var lr=x=>{throw TypeError(x)};var Hr=(x,t,e)=>t in
     `,this.ui.textarea=this.shadowRoot.querySelector("textarea"),this.ui.textarea.oninput=()=>{this.ui.events.dispatch("input",this.ui.textarea.value)},this.ui.textarea.onchange=()=>{this.ui.events.dispatch("change",this.ui.textarea.value)}}connectedCallback(){}disconnectedCallback(){}attributeChangedCallback(t,e,i){switch(t){case"title":this.ui.title=i;break;case"value":this.ui.value=i;break;case"placeholder":this.ui.placeholder=i;break;case"invalid":this.ui.textarea.ariaInvalid=i!==null?"":null;break;case"rows":this.ui.rows=i!==null?parseFloat(i):null;break;case"cols":this.ui.cols=i!==null?parseFloat(i):null;break}}};W(Qt,"register",()=>{customElements.get("ui-textarea")||customElements.define("ui-textarea",Qt)}),W(Qt,"observedAttributes",["title","value","placeholder","invalid","rows","cols"]);let Di=Qt;const te=class te extends HTMLElement{constructor(){super(),this.ui={root:this,data:{},events:new pt,get current(){return this.root.getAttribute("current")},set current(t){this.root.setCurrent(t||"")},fallback(){return this.root.querySelector("ui-lang-type[fallback]")},get(t,e){var i,n;return((n=(i=this.data)==null?void 0:i[t])==null?void 0:n[e])||null}},this.shadowRender()}shadowRender(){}connectedCallback(){}disconnectedCallback(){}attributeChangedCallback(t,e,i){switch(t){case"current":this.ui.current=i;break}}async setCurrent(t){const e=this.querySelector(`ui-lang-type[name="${t}"]`)||this.ui.fallback();if(e){if(!e.ui.href)throw"Missing href attribute!";try{this.data=(await fetch(e.ui.href)).json()}catch(i){console.error(i)}this.ui.events.dispatch("change",e)}}};W(te,"register",()=>{customElements.get("ui-lang")||customElements.define("ui-lang",te)}),W(te,"observedAttributes",["current"]);let Oi=te;const Ne=class Ne extends HTMLElement{constructor(){super(),this.ui={root:this,get name(){return this.root.getAttribute("name")},set name(t){if(!t){this.root.removeAttribute("name");return}this.root.setAttribute("name",t)},get href(){return this.root.getAttribute("href")},set href(t){if(!t){this.root.removeAttribute("href");return}this.root.setAttribute("href",t)},get fallback(){return this.root.hasAttribute("fallback")},set fallback(t){if(!t){this.root.removeAttribute("fallback");return}this.root.setAttribute("fallback","")}},this.shadowRender()}shadowRender(){}connectedCallback(){}disconnectedCallback(){}};W(Ne,"register",()=>{customElements.get("ui-lang-type")||customElements.define("ui-lang-type",Ne)});let Mi=Ne;const ee=class ee extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"}),this.ui={root:this,get nobg(){return this.root.hasAttribute("nobg")},set nobg(t){const e=this.root.shadowRoot.querySelector(".background");if(!t){e.style.display=null;return}e.style.display="none"}},this.shadowRender()}shadowRender(){this.shadowRoot.innerHTML=F`
       <style>
         :host {
-          position: absolute;
+          position: absolute !important;
           top: 0;
           right: 0;
           bottom: 0;
@@ -1155,7 +1155,7 @@ var Mr=Object.defineProperty;var lr=x=>{throw TypeError(x)};var Hr=(x,t,e)=>t in
 
         .background {
           z-index: 999;
-          position: absolute;
+          position: absolute !important;
           top: 0;
           right: 0;
           bottom: 0;
@@ -1169,7 +1169,7 @@ var Mr=Object.defineProperty;var lr=x=>{throw TypeError(x)};var Hr=(x,t,e)=>t in
           z-index: 1000;
           content: "";
           box-sizing: border-box;
-          position: absolute;
+          position: absolute !important;
           top: 50%;
           left: 50%;
           width: 2.5rem;
