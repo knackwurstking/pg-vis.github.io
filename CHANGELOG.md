@@ -56,6 +56,7 @@
 
 **Fixed**:
 
+- Slow product page rendering
 - `VisDataEntryPage` submit data, replace old entries after a key change
 
 ## v0.0.32 2024-08-06
