@@ -3,8 +3,9 @@
 <!--toc:start-->
 
 - [Changelog](#changelog)
-  - [Road to version v1.0.0](#road-to-version-v100)
-  - [v0.0.31 [unreleased]](#v0031-unreleased)
+  - [v1.0.0 [unreleased]](#v100-unreleased)
+  - [v0.0.32 2024-08-06](#v0032-2024-08-06)
+  - [v0.0.31 2024-08-05](#v0031-2024-08-05)
   - [v0.0.30 2024-07-28](#v0030-2024-07-28)
   - [v0.0.29 2024-07-27](#v0029-2024-07-27)
   - [v0.0.28 2024-07-20](#v0028-2024-07-20)
@@ -36,10 +37,15 @@
   - [v0.0.1](#v001)
   <!--toc:end-->
 
-## v0.0.33 [unreleased]
+## v1.0.0 [unreleased]
+
+**TODO**:
+
+- [ ] Allow to rename vis-lists titles, just like the metal-sheets [work-in-progress]
 
 **Added**:
 
+- Added product page for vis-lists entries
 - Product page vis-data (sorted)
 - `DrawerGistItem` for the vis-data group
 - Check for build number on each app start (for quick fixes)
@@ -47,6 +53,7 @@
 **Changed**:
 
 - Sort all vis-data lists and entries
+- [ui version v0.2.16](https://github.com/knackwurstking/ui)
 
 **Fixed**:
 
