@@ -38,15 +38,11 @@
 
 ## v0.0.33 [unreleased]
 
-**TODO**:
-
-- [ ] Clean up this `pageNames.*` and `storeKey` mess [work-in-progress]
-
 **Added**:
 
 - Product page vis-data (sorted)
 - [x] "GistID" drawer item [work-in-progress]
-- [ ] Check for build number on each app start, do quick fixes after an update [work-in-progress]
+- [x] Check for build number on each app start, do quick fixes after an update [work-in-progress]
 
 **Changed**:
 
