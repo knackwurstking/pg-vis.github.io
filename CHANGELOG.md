@@ -50,6 +50,7 @@
 
 **Changed**:
 
+- Vis file names, timestamp replaced with title
 - Sort all vis-data lists and entries
 - [ui version v0.2.16](https://github.com/knackwurstking/ui)
 
