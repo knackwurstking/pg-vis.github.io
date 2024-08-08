@@ -748,7 +748,7 @@ var Mr=Object.defineProperty;var lr=x=>{throw TypeError(x)};var Hr=(x,t,e)=>t in
       <ui-label ripple>
         <input slot="input" type="checkbox"></input>
       </ui-label>
-    `,this.ui.label=this.shadowRoot.querySelector("ui-label"),this.ui.input=this.shadowRoot.querySelector("input")}connectedCallback(){}disconnectedCallback(){}attributeChangedCallback(t,e,i){switch(t){case"primary":this.ui.primary=i;break;case"secondary":this.ui.primary=i;break;case"value":this.ui.value=i;break;case"checked":this.ui.checked=i!==null;break}}};W(Gt,"register",()=>{customElements.get("ui-check")||customElements.define("ui-check",Gt)}),W(Gt,"observedAttributes",["primary","secondary","value","checked"]);let Ai=Gt;const Yt=class Yt extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"}),this.removeRipple=null,this.running=!1,this.onClick=async()=>{this.ui.inputSlot.forEach(t=>t.click())},this.onInputClick=async t=>{t.stopPropagation()},this.ui={root:this,get ripple(){return this.root.running},set ripple(t){if(!t){this.root.disableRipple();return}this.root.enableRipple()},get primary(){return this.root.shadowRoot.querySelector("ui-primary").innerText},set primary(t){this.root.shadowRoot.querySelector("ui-primary").innerText=t||""},get secondary(){return this.root.shadowRoot.querySelector("ui-secondary").innerText},set secondary(t){this.root.shadowRoot.querySelector("ui-secondary").innerText=t||""},get inputSlot(){return[...this.root.querySelectorAll('[slot="input"]')]}},this.shadowRender()}shadowRender(){this.shadowRoot.innerHTML=F`
+    `,this.ui.label=this.shadowRoot.querySelector("ui-label"),this.ui.input=this.shadowRoot.querySelector("input")}connectedCallback(){}disconnectedCallback(){}attributeChangedCallback(t,e,i){switch(t){case"primary":this.ui.primary=i;break;case"secondary":this.ui.primary=i;break;case"value":this.ui.value=i;break;case"checked":this.ui.checked=i!==null;break}}};W(Gt,"register",()=>{customElements.get("ui-check")||customElements.define("ui-check",Gt)}),W(Gt,"observedAttributes",["primary","secondary","value","checked"]);let Ai=Gt;const Yt=class Yt extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"}),this.removeRipple=null,this.running=!1,this.onClick=async()=>{this.ui.inputSlot.forEach(t=>t.click())},this.onInputClick=async t=>{t.stopPropagation()},this.ui={root:this,get ripple(){return this.root.running},set ripple(t){if(!t){this.root.disableRipple();return}this.root.enableRipple()},get primary(){return this.root.shadowRoot.querySelector("ui-primary").innerHTML},set primary(t){this.root.shadowRoot.querySelector("ui-primary").innerHTML=t||""},get secondary(){return this.root.shadowRoot.querySelector("ui-secondary").innerHTML},set secondary(t){this.root.shadowRoot.querySelector("ui-secondary").innerHTML=t||""},get inputSlot(){return[...this.root.querySelectorAll('[slot="input"]')]}},this.shadowRender()}shadowRender(){this.shadowRoot.innerHTML=F`
       <style>
         * {
           box-sizing: border-box;
@@ -1380,14 +1380,8 @@ var Mr=Object.defineProperty;var lr=x=>{throw TypeError(x)};var Hr=(x,t,e)=>t in
             </ui-icon-button>
           </ui-flex-grid-item>`:""}
     </ui-flex-grid-row>
-  `;const s=n.querySelector('[name="delete"]');s&&s.addEventListener("click",i);const o=n.querySelector('[name="item"]');return o&&o.addEventListener("click",e),n}function Er({index:x,entry:t,events:e=null,ripple:i=!0}){const n=document.createElement("li");return n.classList.add("vis-data-item"),n.role="button",n.style.display="block",n.style.position="relative",n.style.overflow="hidden",n.style.borderTop="1px solid var(--ui-borderColor)",n.style.borderBottom="1px solid var(--ui-borderColor)",n.style.margin="var(--ui-spacing) 0",n.style.cursor="pointer",n.innerHTML=F`
-    <ui-label
-      primary="${t.key.replaceAll(`
-`,"<br />")}"
-      secondary="${t.value.replaceAll(`
-`,"<br />")}"
-    ></ui-label>
-  `,t.lotto&&(n.innerHTML+=F`
+  `;const s=n.querySelector('[name="delete"]');s&&s.addEventListener("click",i);const o=n.querySelector('[name="item"]');return o&&o.addEventListener("click",e),n}function Er({index:x,entry:t,events:e=null,ripple:i=!0}){const n=document.createElement("li");n.classList.add("vis-data-item"),n.role="button",n.style.display="block",n.style.position="relative",n.style.overflow="hidden",n.style.borderTop="1px solid var(--ui-borderColor)",n.style.borderBottom="1px solid var(--ui-borderColor)",n.style.margin="var(--ui-spacing) 0",n.style.cursor="pointer",n.innerHTML=F` <ui-label></ui-label> `;const s=n.querySelector("ui-label");return s.ui.primary=t.key,s.ui.secondary=t.value.replaceAll(" ","&nbsp;").replaceAll(`
+`,"<br />"),t.lotto&&(n.innerHTML+=F`
       <code style="margin: 0.25rem;">Lotto: ${t.lotto}</code><br />
     `),(t.format||t.stamp||t.thickness)&&(n.innerHTML+='<ui-flex-grid-row gap="0.25rem">'),t.format&&(n.innerHTML+=F`
       <code style="margin: 0.25rem;">Format: ${t.format}</code>
