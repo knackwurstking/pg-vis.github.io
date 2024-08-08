@@ -793,6 +793,7 @@ var Mr=Object.defineProperty;var lr=x=>{throw TypeError(x)};var Hr=(x,t,e)=>t in
           font-size: 1.1rem;
           font-family: var(--ui-fontFamily);
           font-variation-settings: var(--ui-text-primary-fontVariation);
+          overflow-wrap: anywhere;
         }
       </style>
 
@@ -803,6 +804,7 @@ var Mr=Object.defineProperty;var lr=x=>{throw TypeError(x)};var Hr=(x,t,e)=>t in
           font-size: 0.9rem;
           font-family: var(--ui-fontFamily);
           font-variation-settings: var(--ui-text-secondary-fontVariation);
+          overflow-wrap: anywhere;
         }
       </style>
 
