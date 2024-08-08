@@ -41,8 +41,8 @@
 **Added**:
 
 - Product page vis-data (sorted)
-- [x] "GistID" drawer item [work-in-progress]
-- [x] Check for build number on each app start, do quick fixes after an update [work-in-progress]
+- `DrawerGistItem` for the vis-data group
+- Check for build number on each app start (for quick fixes)
 
 **Changed**:
 
