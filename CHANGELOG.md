@@ -39,12 +39,9 @@
 
 ## v1.0.0 [unreleased]
 
-**TODO**:
-
-- [ ] Allow to rename vis-lists titles, just like the metal-sheets [work-in-progress]
-
 **Added**:
 
+- Edit dialog for vis-data lists
 - Added product page for vis-lists entries
 - Product page vis-data (sorted)
 - `DrawerGistItem` for the vis-data group
