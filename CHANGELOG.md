@@ -41,6 +41,7 @@
 
 **Added**:
 
+- Preview for vis-data active filters for each entry
 - Edit dialog for vis-data lists
 - Added product page for vis-lists entries
 - Product page vis-data (sorted)
