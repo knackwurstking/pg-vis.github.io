@@ -1677,7 +1677,7 @@ ${x.value}`}const We=class We extends wt{constructor(){super("New Vis Data"),thi
       >
         <div class="list"></div>
       </div>
-    `}set(t){this.data=t}setAppBarTitle(){this.uiStore.ui.set("appBarTitle",this.data?`Vis Listen - ${this.data.name}`:"Vis Listen")}renderData(){const t=this.querySelector(".list");for(;t.firstChild;)t.removeChild(t.firstChild);if(!this.data)return;const e=new pt;e.on("click",i=>{this.stackLayout.ui.set(Q.product,n=>{n.set(i)})});for(const i of this.data.data)t.appendChild(er({product:i,events:e,ripple:!0}))}};W(li,"register",()=>{customElements.define("vis-lists-page",li)});let Be=li;const $t="v1.0.0.dev",os=1,ui=class ui extends ge{constructor(){super(),this.render()}render(){this.innerHTML=F`
+    `}set(t){this.data=t}setAppBarTitle(){this.uiStore.ui.set("appBarTitle",this.data?`Vis Listen - ${this.data.name}`:"Vis Listen")}renderData(){const t=this.querySelector(".list");for(;t.firstChild;)t.removeChild(t.firstChild);if(!this.data)return;const e=new pt;e.on("click",i=>{this.stackLayout.ui.set(Q.product,n=>{n.set(i)})});for(const i of this.data.data)t.appendChild(er({product:i,events:e,ripple:!0}))}};W(li,"register",()=>{customElements.define("vis-lists-page",li)});let Be=li;const $t="v1.0.0.beta",os=1,ui=class ui extends ge{constructor(){super(),this.render()}render(){this.innerHTML=F`
       <div
         style="
           font-size: 0.85rem;
