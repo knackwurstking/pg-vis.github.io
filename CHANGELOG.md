@@ -41,6 +41,7 @@
 
 **Added**:
 
+- Drag'n'Drop for vis-lists page
 - Preview for vis-data active filters for each entry
 - Edit dialog for vis-data lists
 - Added product page for vis-lists entries
