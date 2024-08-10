@@ -1250,7 +1250,7 @@ var qr=Object.defineProperty;var cr=x=>{throw TypeError(x)};var jr=(x,t,e)=>t in
           color: inherit;
         }
 
-        svg {
+        ::slotted(svg) {
           width: 100%;
           height: 100%;
         }
@@ -1690,6 +1690,7 @@ ${x.value}`}const We=class We extends vt{constructor(){super("New Vis Data"),thi
     <ui-secondary>Build: 3 - Version: v1.0.0.beta - 2024-08-10</ui-secondary>
 
     <ul>
+      <li><strong>Fixed</strong> SVG icons not visible on IOS</li>
       <li>Code clean up</li>
     </ul>
 
