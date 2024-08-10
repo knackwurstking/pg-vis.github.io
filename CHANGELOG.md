@@ -57,6 +57,7 @@
 
 **Fixed**:
 
+- Broken metal-sheet-list drag and drop for Mobile
 - Slow product page rendering
 - `VisDataEntryPage` submit data, replace old entries after a key change
 
