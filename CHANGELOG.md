@@ -39,27 +39,25 @@
 
 ## v1.0.0 [unreleased]
 
-**Added**:
+**General**:
 
-- Drag'n'Drop for vis-lists page
-- Preview for vis-data active filters for each entry
-- Edit dialog for vis-data lists
-- Added product page for vis-lists entries
-- Product page vis-data (sorted)
-- `DrawerGistItem` for the vis-data group
-- Check for build number on each app start (for quick fixes)
-
-**Changed**:
-
-- Vis file names, timestamp replaced with title
-- Sort all vis-data lists and entries
 - [ui version v0.2.16](https://github.com/knackwurstking/ui)
 
-**Fixed**:
+- Enabled edit icon for vis-data (rename lists)
+- Added the vis product page to vis-data
+- Added gist handler for the vis-data group (drawer)
+- Checking for build numbers after each app start
+- Added some preview for active vis-data "filters"
+- Added sorting for vis-data (drawer and page)
+- Changed vis filenames (download)
+- Added drag and drop for vis-lists
+- Code clean up
 
-- Broken metal-sheet-list drag and drop for Mobile
-- Slow product page rendering
-- `VisDataEntryPage` submit data, replace old entries after a key change
+**Fixes**:
+
+- Fixed `VisDataEntryPage` submit, original entries will now be removed
+- Fixed product page rendering
+- Fixed drag and drop for metal-sheets
 
 ## v0.0.32 2024-08-06
 
