@@ -43,6 +43,7 @@
 
 - [ui version v0.2.16](https://github.com/knackwurstking/ui)
 
+- Added German translations for confirmation dialog and alert messages
 - Enabled edit icon for vis-data (rename lists)
 - Added the vis product page to vis-data
 - Added gist handler for the vis-data group (drawer)
