@@ -1333,6 +1333,26 @@ var Fr=Object.defineProperty;var dr=p=>{throw TypeError(p)};var $r=(p,t,e)=>t in
     <ul style="list-style: inside">
       <li><strong>Added</strong> missing validation for "vis-data" imports</li>
 
+      <li>
+        <strong>Changed</strong>
+        <code>&lt;ul&gt;</code> click handling for "alert-lists"
+      </li>
+
+      <li>
+        <strong>Changed</strong>
+        <code>&lt;ul&gt;</code> click handling for "vis"
+      </li>
+
+      <li>
+        <strong>Changed</strong>
+        <code>&lt;ul&gt;</code> click handling for "vis-lists"
+      </li>
+
+      <li>
+        <strong>Changed</strong>
+        <code>&lt;ul&gt;</code> click handling for "vis-data"
+      </li>
+
       <li>Code clean up</li>
     </ul>
 
@@ -1346,7 +1366,7 @@ var Fr=Object.defineProperty;var dr=p=>{throw TypeError(p)};var $r=(p,t,e)=>t in
     <ul style="list-style: inside;">
       <li>
         <strong>Added</strong>
-        German translations for confirmation dialog and alert messages
+        German translations for confirmation dialogs and alert messages
       </li>
 
       <li>Code clean up</li>

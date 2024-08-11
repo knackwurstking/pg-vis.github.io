@@ -6,12 +6,12 @@
 
 - [ui version v0.2.16](https://github.com/knackwurstking/ui)
 
-- Added validation `VisData` files
-- Changed click handling for "alert-lists" lists
-- Changed click handling for "vis" lists
-- Changed click handling for "vis-lists" lists
-- Changed click handling for "vis-data" lists
-- Added German translations for confirmation dialog and alert messages
+- Added validation for `VisData` files
+- Changed `<ul>` click handling for "alert-lists"
+- Changed `<ul>` click handling for "vis"
+- Changed `<ul>` click handling for "vis-lists"
+- Changed `<ul>` click handling for "vis-data"
+- Added German translations for confirmation dialogs and alert messages
 - Enabled edit icon for vis-data (rename lists)
 - Added the vis product page to vis-data
 - Added gist handler for the vis-data group (drawer)
