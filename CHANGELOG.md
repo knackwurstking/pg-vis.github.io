@@ -39,6 +39,10 @@
 
 ## v1.0.0 [unreleased]
 
+**TODO**:
+
+- [ ] Added validation `VisData` files
+
 **General**:
 
 - [ui version v0.2.16](https://github.com/knackwurstking/ui)

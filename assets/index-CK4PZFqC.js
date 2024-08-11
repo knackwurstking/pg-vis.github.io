@@ -1316,7 +1316,10 @@ var Ir=Object.defineProperty;var hr=k=>{throw TypeError(k)};var Fr=(k,t,e)=>t in
     class="no-scrollbar"
     style="height: 100%; overflow: hidden; overflow-y: auto;"
   >
-    <ui-secondary>Build: 4 - Version: v1.0.0.beta - 2024-08-11</ui-secondary>
+    <ui-secondary>
+      Build: 4 - Version: v1.0.0.beta <br />
+      2024-08-11
+    </ui-secondary>
 
     <ul style="list-style: inside;">
       <li>
@@ -1327,7 +1330,10 @@ var Ir=Object.defineProperty;var hr=k=>{throw TypeError(k)};var Fr=(k,t,e)=>t in
       <li>Code clean up</li>
     </ul>
 
-    <ui-secondary>Build: 3 - Version: v1.0.0.beta - 2024-08-10</ui-secondary>
+    <ui-secondary>
+      Build: 3 - Version: v1.0.0.beta <br />
+      2024-08-10
+    </ui-secondary>
 
     <ul style="list-style: inside;">
       <li><strong>Fixed</strong> SVG icons not visible on IOS</li>
@@ -1335,7 +1341,7 @@ var Ir=Object.defineProperty;var hr=k=>{throw TypeError(k)};var Fr=(k,t,e)=>t in
       <li>Code clean up</li>
     </ul>
 
-    <ui-secondary>Build: 2 - Version: v1.0.0.beta</ui-secondary>
+    <ui-secondary> Build: 2 - Version: v1.0.0.beta </ui-secondary>
 
     <ul style="list-style: inside;">
       <li>
@@ -1349,7 +1355,7 @@ var Ir=Object.defineProperty;var hr=k=>{throw TypeError(k)};var Fr=(k,t,e)=>t in
       </li>
     </ul>
 
-    <ui-secondary>Build: 1 - Version: v1.0.0.beta</ui-secondary>
+    <ui-secondary> Build: 1 - Version: v1.0.0.beta </ui-secondary>
 
     <ul style="list-style: inside;">
       <li>Beta release for ${rr}</li>
