@@ -1311,7 +1311,7 @@ var Ir=Object.defineProperty;var hr=p=>{throw TypeError(p)};var Fr=(p,t,e)=>t in
       ></path>
     </g>
   </svg>
-`,Lr="v1.0.0",Ni=6,Yr=F`
+`,Lr="v1.0.0.rc",Ni=6,Yr=F`
   <ui-container
     class="no-scrollbar info-dialog"
     style="height: 100%; overflow: hidden; overflow-y: auto;"
@@ -1982,7 +1982,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     `,this.querySelector("ui-button").ui.events.on("click",()=>{switch(this.getAttribute("type")){case"metal-sheet-lists":case"metalSheetLists":this.newMetalSheetLists();break;case"vis-data":case"visData":this.newVisData();break;default:return}})}newMetalSheetLists(){const t=new le("create");t.ui.events.on("close",()=>{document.body.removeChild(t)}),t.ui.events.on("submit",e=>{e!==null&&this.uiStore.ui.update("metalSheetLists",i=>(i=[...i,{date:new Date().getTime(),format:e.format,toolID:e.toolID,data:{press:e.press,table:{header:["Stärke","Marke (Höhe)","Blech Stempel","Blech Marke","Stf. P2-5","Stf. P0"],data:[]}}}],i))}),document.body.appendChild(t),t.ui.open(!0)}newVisData(){const t=new we;t.ui.events.on("close",()=>{document.body.removeChild(t)}),t.ui.events.on("submit",e=>{this.uiStore.ui.update("visData",i=>(i.unshift({...e,data:[]}),i))}),document.body.appendChild(t),t.ui.open(!0)}};W(bi,"register",()=>{customElements.define("pg-drawer-item-new",bi)});let Gi=bi;const vi=class vi extends HTMLElement{constructor(){super(),this.style.fontSize="0.85rem",this.style.fontVariationSettings="var(--ui-input-fontVariation)"}};W(vi,"register",()=>{customElements.define("pg-drawer-revision",vi)});let Qi=vi;const yi=class yi extends be{constructor(){super(),this.render()}render(){this.innerHTML=F`
       <ui-button
         class="version flex justify-start"
-        style="${At("font-size: 0.85rem","padding: 0.25rem","margin-bottom: var(--ui-spacing)","font-weight: normal")}"
+        style="${At("font-size: 0.85rem","padding: 0.25rem","margin-bottom: var(--ui-spacing)","font-weight: normal","text-transform: none;")}"
         variant="ghost"
         color="primary"
       >
