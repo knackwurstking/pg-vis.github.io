@@ -1,11 +1,12 @@
 # Changelog
 
-## v1.0.0 — [unreleased]
+## v1.0.0 — [work-in-progress]
 
 - [ui version v0.2.16](https://github.com/knackwurstking/ui)
 
 **General**:
 
+- Improved error handling
 - Added validation for `VisData` files
 - Changed `<ul>` click handling for "alert-lists"
 - Changed `<ul>` click handling for "vis"
@@ -24,7 +25,7 @@
 
 **Fixes**:
 
-- Fixed error handling for gist push
+- Fixed error handling
 - Fixed `VisDataEntryPage` submit, original entries will now be removed
 - Fixed product page rendering
 - Fixed drag and drop for metal-sheets
