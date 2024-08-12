@@ -1,17 +1,17 @@
 # Changelog
 
-## v1.0.0 [unreleased]
-
-**General**:
+## v1.0.0 — [unreleased]
 
 - [ui version v0.2.16](https://github.com/knackwurstking/ui)
+
+**General**:
 
 - Added validation for `VisData` files
 - Changed `<ul>` click handling for "alert-lists"
 - Changed `<ul>` click handling for "vis"
 - Changed `<ul>` click handling for "vis-lists"
 - Changed `<ul>` click handling for "vis-data"
-- Added German translations for confirmation dialogs and alert messages
+- Added some German translations
 - Enabled edit icon for vis-data (rename lists)
 - Added the vis product page to vis-data
 - Added gist handler for the vis-data group (drawer)
@@ -24,11 +24,12 @@
 
 **Fixes**:
 
+- Fixed error handling for gist push
 - Fixed `VisDataEntryPage` submit, original entries will now be removed
 - Fixed product page rendering
 - Fixed drag and drop for metal-sheets
 
-## v0.0.32 2024-08-06
+## v0.0.32 — 2024-08-06
 
 **Added**:
 
