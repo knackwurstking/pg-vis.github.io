@@ -1,11 +1,12 @@
 # Changelog
 
-## v1.0.0 — [work-in-progress]
+## v1.0.0 — 2024-08-12
 
 - [ui version v0.2.16](https://github.com/knackwurstking/ui)
 
 **General**:
 
+- Removed "date" from types `AlertList`, `MetalSheetList`, `VisList` and `VisData`
 - Improved error handling
 - Added validation for `VisData` files
 - Changed `<ul>` click handling for "alert-lists"
@@ -25,6 +26,7 @@
 
 **Fixes**:
 
+- Fixed bookmarks dialog sorting
 - Fixed error handling
 - Fixed `VisDataEntryPage` submit, original entries will now be removed
 - Fixed product page rendering
