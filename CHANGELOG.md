@@ -1,5 +1,13 @@
 # Changelog
 
+#  v1.1.2 — [2024-11-20]
+
+- [ui v1.1.1](https://github.com/knackwurstking/ui)
+
+**Changed**:
+
+- Changed input type from number to text
+
 ## v1.1.1 — [2024-11-18]
 
 **Changed**:
