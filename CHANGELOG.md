@@ -1,6 +1,17 @@
 # Changelog
 
-#  v1.1.2 — [2024-11-20]
+> **NOTE if push to dev**:
+>
+> - Replace "pg-vis.github.io" with "pg-vis-dev.github.io"
+> - Change store prefix from "pg-vis:" to "pg-vis-dev:"
+
+## v1.1.3 — [2025-01-10]
+
+**Fixed**:
+
+- Fixed overwriting of “Metal Sheets” and “Vis Data” lists in some cases.
+
+## v1.1.2 — [2024-11-20]
 
 - [ui v1.1.1](https://github.com/knackwurstking/ui)
 
@@ -27,12 +38,13 @@
 - [ui v1.1.0](https://github.com/knackwurstking/ui)
 
 **TODOs**:
+
 - [x] Change dev app icons
-- [x] Replace "pg-vis-dev.github.io" with "pg-vis.github.io" before publishing [work-in-progress]
+- [x] Replace "pg-vis-dev.github.io" with "pg-vis.github.io" before publishing
 
 **General**:
 
-- Switched code base to typescript using https://lit.dev/
+- Switched code base to typescript using <https://lit.dev/>
 - Take bookmarks data from the "Vis" if possible
 - Renamed "Vis Listen" to "Vis Bookmarks"
 - Changed "Vis Data": "title" field is now optional
