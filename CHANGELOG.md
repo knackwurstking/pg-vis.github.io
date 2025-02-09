@@ -5,6 +5,13 @@
 > - Replace "pg-vis.github.io" with "pg-vis-dev.github.io"
 > - Change store prefix from "pg-vis:" to "pg-vis-dev:"
 
+## v2.1.0 [unreleased]
+
+- Added new dialog for metal sheet filters
+- Changed dialogs
+- Fixed flakes (special) dialog, switched inputs main - c1
+- Fixed bookmarks store initialization, always resets even if available
+
 ## v2.0.4 [2025-02-07]
 
 - Fixed metal sheet entry dialog form input for thickness
@@ -298,7 +305,7 @@
 
 - Add pull and push handler for Gist IDs
 
-    - Allow "push" to files instead of gist
+  - Allow "push" to files instead of gist
 
 ## v0.0.16 — [2024-07-05]
 
