@@ -23,7 +23,7 @@
             }
         </script>
 
-      <script type="module" crossorigin src="/pg-vis.github.io/assets/index-CV6d9E1u.js"></script>
+      <script type="module" crossorigin src="/pg-vis.github.io/assets/index-BOv1QrD8.js"></script>
       <link rel="stylesheet" crossorigin href="/pg-vis.github.io/assets/index-CGRwWSKA.css">
     <link rel="manifest" href="/pg-vis.github.io/manifest.webmanifest"></head>
 
@@ -298,7 +298,6 @@
                 </div>
 
                 <div class="ui-flex-grid-row" style="--justify: flex-end">
-                    <!-- TODO: Need a close button here, or cancel -->
                     <input type="submit" />
                 </div>
             </form>
@@ -351,21 +350,12 @@
                 </div>
 
                 <div class="ui-flex-grid-row" style="--justify: flex-end">
-                    <!-- TODO: Need a close button here, or cancel -->
                     <input type="submit" />
                 </div>
             </form>
         </dialog>
 
-        <!-- TODO: Clean up here -->
-        <dialog name="vis" oncancel="event.preventDefault()">
-            <div class="ui-flex-grid-row">
-                <h4 class="ui-flex-grid-item">VIS</h4>
-                <button class="close" variant="ghost" color="primary" icon>
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-
+        <dialog name="vis">
             <form method="dialog">
                 <div class="ui-flex-grid">
                     <div class="ui-flex-grid-row" style="--align: center">
@@ -374,22 +364,13 @@
                     </div>
 
                     <div class="ui-flex-grid-row" style="--justify: flex-end">
-                        <input type="reset" />
                         <input type="submit" />
                     </div>
                 </div>
             </form>
         </dialog>
 
-        <!-- TODO: Clean up here -->
-        <dialog name="product" oncancel="event.preventDefault()">
-            <div class="ui-flex-grid-row">
-                <h4 class="ui-flex-grid-item">Produkt</h4>
-                <button class="close" variant="ghost" color="primary" icon>
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-
+        <dialog name="product">
             <form method="dialog">
                 <div class="ui-flex-grid">
                     <div class="ui-flex-grid-row" style="--align: center; --justify: space-between">
@@ -434,21 +415,12 @@
                 </div>
 
                 <div class="ui-flex-grid-row" style="--justify: flex-end">
-                    <input type="reset" />
                     <input type="submit" />
                 </div>
             </form>
         </dialog>
 
-        <!-- TODO: Clean up here -->
-        <dialog name="vis-data" oncancel="event.preventDefault()">
-            <div class="ui-flex-grid-row">
-                <h4 class="ui-flex-grid-item">VIS: Data</h4>
-                <button class="close" variant="ghost" color="primary" icon>
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-
+        <dialog name="vis-data">
             <form method="dialog">
                 <div class="ui-flex-grid">
                     <div class="ui-flex-grid-row" style="--align: center">
@@ -457,14 +429,12 @@
                     </div>
 
                     <div class="ui-flex-grid-row" style="--justify: flex-end">
-                        <input type="reset" />
                         <input type="submit" />
                     </div>
                 </div>
             </form>
         </dialog>
 
-        <!-- TODO: Clean up here -->
         <dialog name="choose">
             <div class="ui-flex-grid-row">
                 <h4 class="title ui-flex-grid-item"></h4>
@@ -476,7 +446,6 @@
             <div class="choices ui-flex-grid-row" style="--warp: wrap"></div>
         </dialog>
 
-        <!-- TODO: Clean up here -->
         <dialog name="product-bookmark">
             <div class="ui-flex-grid-row">
                 <h4 class="title ui-flex-grid-item"></h4>
@@ -488,15 +457,7 @@
             <ul class="checkboxes"></ul>
         </dialog>
 
-        <!-- TODO: Clean up here -->
         <dialog name="vis-data-entry" style="width: 100%" oncancel="event.preventDefault()">
-            <div class="ui-flex-grid-row">
-                <h4 class="ui-flex-grid-item">Vis Data Eintrag</h4>
-                <button class="close" variant="ghost" color="primary" icon>
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-
             <form method="dialog">
                 <div class="ui-flex-grid">
                     <div class="ui-flex-grid" style="--gap: 0">
@@ -557,26 +518,16 @@
                 </div>
 
                 <div class="ui-flex-grid-row" style="--justify: flex-end">
-                    <input type="reset" />
                     <input type="submit" />
                 </div>
             </form>
         </dialog>
 
-        <!-- TODO: Clean up here -->
-        <dialog name="special-flakes-entry" oncancel="event.preventDefault()">
-            <div class="ui-flex-grid-row">
-                <h4 class="ui-flex-grid-item">Flakes</h4>
-                <button class="close" variant="ghost" color="primary" icon>
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-
+        <dialog name="special-flakes-entry">
             <form method="dialog">
-                <div class="inputs ui-flex-grid" style="--gap: 1rem"></div>
+                <div class="input-container ui-flex-grid"></div>
 
                 <div class="ui-flex-grid-row" style="--justify: flex-end">
-                    <input type="reset" />
                     <input type="submit" />
                 </div>
             </form>
