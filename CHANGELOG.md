@@ -5,9 +5,13 @@
 > - Replace "pg-vis.github.io" with "pg-vis-dev.github.io"
 > - Change store prefix from "pg-vis:" to "pg-vis-dev:"
 
+## v2.1.3 [2025-02-14]
+
+- Fixed missing class name in "special-flakes-entry" dialog
+
 ## v2.1.2 [2025-02-13]
 
-- Fixed boootstrap icons href
+- Fixed bootstrap icons href
 
 ## v2.1.1 [2025-02-11]
 
